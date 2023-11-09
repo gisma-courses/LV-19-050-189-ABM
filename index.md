@@ -2,10 +2,10 @@
 title: ""
 open-graph:
   description: "EON Summer School 2023 (28.8-01.09-2023)"
-  image: /images/clausiwood.png
+  image: /images/logo.png
 twitter-card:
   description: "EON Summer School 2023 (28.8-01.09-2023)"
-  image: /images/clausiwood.png
+  image: /images/logo.png
 
 comments: false
 ---
@@ -20,7 +20,7 @@ comments: false
 
 
 
-![Polsterberger Hubhaus 2022](/images/clausiwood.png)
+![Polsterberger Hubhaus 2022](/images/logo.png)
 
 
 
