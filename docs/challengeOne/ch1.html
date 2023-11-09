@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Agentenbasierte Modellierung LV-19-050-189-ABM - ChallengeOne – Top of the World</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../css/styles.css">
+<meta property="og:title" content="Agentenbasierte Modellierung LV-19-050-189-ABM - ChallengeOne – Top of the World">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-189-ABM/challengeOne/media/image3.png">
+<meta property="og:site-name" content="Agentenbasierte Modellierung LV-19-050-189-ABM">
+<meta name="twitter:title" content="Agentenbasierte Modellierung LV-19-050-189-ABM - ChallengeOne – Top of the World">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://gisma-courses.github.io/LV-19-050-189-ABM/challengeOne/media/image3.png">
+<meta name="twitter:creator" content="@gisma">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logooil.jpg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Agentenbasierte Modellierung LV-19-050-189-ABM</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../challengeOne/ch1.html">Challenge One</a></li><li class="breadcrumb-item"><a href="../challengeOne/ch1.html">ChallengeOne – Top of the World</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text">Einführung</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">index.html</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Challenge One</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../challengeOne/ch1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">ChallengeOne – Top of the World</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#einführung" id="toc-einführung" class="nav-link active" data-scroll-target="#einführung">Einführung</a></li>
+  <li><a href="#challengeone-top-of-the-world" id="toc-challengeone-top-of-the-world" class="nav-link" data-scroll-target="#challengeone-top-of-the-world">ChallengeOne – “Top of the World”</a>
+  <ul class="collapse">
+  <li><a href="#bottom-up-oder-wie-erstelle-ich-ein-modell-in-netlogo" id="toc-bottom-up-oder-wie-erstelle-ich-ein-modell-in-netlogo" class="nav-link" data-scroll-target="#bottom-up-oder-wie-erstelle-ich-ein-modell-in-netlogo">Bottom Up oder wie erstelle ich ein Modell in Netlogo?</a></li>
+  <li><a href="#challengeone---beschreibung-des-problems" id="toc-challengeone---beschreibung-des-problems" class="nav-link" data-scroll-target="#challengeone---beschreibung-des-problems">ChallengeOne - Beschreibung des Problems</a></li>
+  <li><a href="#netlogo-implementierungskonzept" id="toc-netlogo-implementierungskonzept" class="nav-link" data-scroll-target="#netlogo-implementierungskonzept">Netlogo Implementierungskonzept</a></li>
+  </ul></li>
+  <li><a href="#verwendete-strukturen-und-befehle-im-skript-challengeonebasic" id="toc-verwendete-strukturen-und-befehle-im-skript-challengeonebasic" class="nav-link" data-scroll-target="#verwendete-strukturen-und-befehle-im-skript-challengeonebasic">Verwendete Strukturen und Befehle im Skript ChallengeOneBasic</a></li>
+  <li><a href="#lösungen" id="toc-lösungen" class="nav-link" data-scroll-target="#lösungen">Lösungen</a></li>
+  <li><a href="#zusammenfassung" id="toc-zusammenfassung" class="nav-link" data-scroll-target="#zusammenfassung">Zusammenfassung</a></li>
+  <li><a href="#bearbeiten-sie-bitte-folgende-aufgaben" id="toc-bearbeiten-sie-bitte-folgende-aufgaben" class="nav-link" data-scroll-target="#bearbeiten-sie-bitte-folgende-aufgaben">Bearbeiten Sie bitte folgende Aufgaben:</a></li>
+  <li><a href="#literatur" id="toc-literatur" class="nav-link" data-scroll-target="#literatur">Literatur</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/gisma-courses/LV-19-050-189-ABM/edit/main/challengeOne/ch1.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/gisma-courses/LV-19-050-189-ABM/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">ChallengeOne – Top of the World</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="einführung" class="level2">
+<h2 class="anchored" data-anchor-id="einführung">Einführung</h2>
+<p>Das Ableiten wissenschaftlicher Konzepte, bzw. allgemeiner Ideen in eine angemessene Modellstruktur ist ein komplexer und nicht schematisch zu erlernender Vorgang. Die Zusammenhänge der realen Welt in der Regel so komplex, dass sie nur in einer generalisierten Form verständlich darstellbar oder analysierbar sind. Schon im Alltag konstruieren wir kontinuierlich sogenannte mentale oder kognitive Modelle zur Vereinfachung unserer Weltwahrnehmung (Rasch 2006). Dieser Umstand ist auch in den Wissenschaften bekannt. So notiert der Physiker Bridgman 1927: <em>" believe that the model is a useful and indeed unescapable tool of thought, in that it enables us to think about the unfamiliar in terms of the familiar"</em> (Bridgman 1927), während 1972 der Modellierer Rivet schlicht behauptet: <em>"The History of mankind is the history of model building."</em> (Rivett 1972).</p>
+<p>Die Perzeption und Interpretation der „realen Welt” sowie die Entwicklung geeigneter Strategien für den praxistauglichen Umgang mit dieser Welt, findet mit dem Hilfsmittel der Abstraktion und Kommunikation ( = Modellbildung) statt. Die Strategien der Abstraktion sind widerstreitend und vielfältig, da Kontextabhängigkeit und Zielsetzung des Abstrahierenden einen wesentlichen Einfluss auf die Resultate ausüben ("Methode Götterblick" s.a. Eckmüllner 2007). Das heißt die gewählte Abstraktion der (räumlichen) Welt ist, wissenschaftlich betrachtet, bestenfalls nachvollziehbar und transparent aber niemals wahr. Auch garantiert die logische Validität der Abstraktion weder die Gültigkeit abgeleiteter noch allgemeiner Aussagen. Ob das konstruierte Modell der Wirklichkeit entspricht, also richtig ist, lässt sich daher nicht beweisen. Bestenfalls lässt sich die Gültigkeit für den definierten Zweck nachweisen, nie aber Wahrheit (Bossel 2004).</p>
+<p>Prinzipiell kann man das Erlernen und Implementierenden von Werkzeugen zur Implementierung von Modellkonzepten in bottom up bzw. top down Ansätze unterscheiden. Als bottom up Ansatz kann das schrittweise Erlernen der Modellierungssprache (in diesem Kurs Netlogo) durch Implementierung konzeptioneller Modellideen (z.B. positive oder negative Rückkopplungsschemata etc.) bezeichnet werden. Dieser Ansatz hat den Vorzug, schrittweise elementare Bausteine zur Verfügung zu stellen um so dann zu guter Letzt auch komplexere Modelle erstellen und verstehen zu können. Er ist mit dem konventionellen Ansatz eine Fremdsprache durch systematisches Lernen von Vokabel und Grammatik zu erlernen vergleichbar.</p>
+<p>Der umgekehrte Weg top down hingegen verfolgt eher den Ansatz „Spring ins kalte Wasser und schwimm' (oder geh' unter)” oder um beim zuvor angeführten Beispiel zu bleiben, dem Erlernen einer Fremdsprache durch sprechen und interagieren in dieser Sprache von Beginn an.</p>
+<p>Beide Konzepte haben didaktisch und pragmatisch bekanntermaßen Vor- und Nachteile. In unserem Fall ist der Versuch mit einem existierenden recht komplexen Modell zu beginnen, der Erfahrung geschuldet, dass mit dem bottom up Ansatz unverhältnismäßig viel Zeit benötigt wird um erste inhaltlich auch nur einigermaßen interessante Modelle verstehen und entwickeln zu können.</p>
+<p>Für die <em>geographische Lehrpraxis</em> erscheint mir ein kombinierter Ansatz von bottom up und top down als ein geeigneter Weg um effizient sowohl die inhaltlichen wie technischen Kompetenzen zu erwerben. Daher wird im zweiten Übungsteil auch intensiv der bottom up Ansatz verfolgt.</p>
+</section>
+<section id="challengeone-top-of-the-world" class="level2">
+<h2 class="anchored" data-anchor-id="challengeone-top-of-the-world">ChallengeOne – “Top of the World”</h2>
+<section id="bottom-up-oder-wie-erstelle-ich-ein-modell-in-netlogo" class="level3">
+<h3 class="anchored" data-anchor-id="bottom-up-oder-wie-erstelle-ich-ein-modell-in-netlogo">Bottom Up oder wie erstelle ich ein Modell in Netlogo?</h3>
+<p>Modelle sind -wie bereits wiederholt diskutiert wurde- spezifische, vereinfachte Ausschnitte der Wirklichkeit. Diese erste Programmierübung <strong>ChallengeOne</strong> soll anhand eines einfachen Beispiels vermitteln, wie dieser recht komplexe Vorgang praktisch zu realisieren ist. Zunächst geht es um die Motivation und Fragestellung einer Modellentwicklung. Nach Festlegung einer Zielsetzung geht es dann vorrangig um die Frage „Wie setzte ich meine Frage in Regeln oder Algorithmen (formale Lösungsbeschreibungen ) um?” und schließlich gilt es die drückende Frage „Wie programmiere ich das Ganze?” zu beantworten. Leider ist es nicht nur zu Beginn einer „Modellierer-Laufbahn” schwierig diese Ebenen zu trennen und in effizienter Weise zu bearbeiten. Es gibt also kein Patentrezept.Die Übung ChallengeOne versucht eine aus meiner Sicht zielorientierte Vorgehensweise aufzuzeigen. Lernziel ist es durch geschicktes Anpassen von Beispielmodellen (=Netlogo-Skripten) und geeigneten Anpassungen ein eigenes Modell zu erstellen und es schrittweise zu erweitern und verbessern. Dabei ist es, zumindest zu Beginn, nicht zwingend erforderlich den Programmcode vollständig zu verstehen (das kommt hoffentlich mit der Übung...), sondern zu folgende Frage beantworten zu können „Wie beurteile ich das Resultat des Programmcodes hinsichtlich meiner Zielsetzung?” In der anschließenden Übung <em>ChallengeTwo</em>** <em>werden diese Kenntnisse vertieft.</em></p>
+<p>Beginnen wir also. <img src="media/image3.png" class="img-fluid"> Schneller, besser, weiter, höher</p>
+<p>Motivationsgrundlage unseres Modellierungsvorhabens ist das alte Spiel: alle wollen nach Möglichkeit besser sein als die Anderen oder zumindest für sich das Beste herausholen – ganz nach dem in gewissen Kreisen berühmten Ausspruch von von Bülow „<strong><em>Mit einem Worte: wir wollen niemand in den Schatten stellen, aber wir verlangen auch unseren Platz an der Sonne”</em></strong><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. In unserem Falle ist der „Platz an der Sonne” nicht Namibia oder Togo, sondern alle wollen frei nach Chris Stangl<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> und Kollegen die „seven summits” packen – ohne jede weitere Motivation nur auf einem der höchsten Berggipfel<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> stehen.</p>
+<p>Ziel dieser Übung ist es alle beweglichen Agenten (turtles) auf den höchsten (erreichbaren) Gipfel zu bekommen. So einfach es auf den ersten Blick erscheint, alle Turtles auf einen Berg zu bekommen, so viele unterschiedliche Abstraktions- und Implementierungs-Konzepte werden berührt. Was soll das heißen? Nun wenn keine genaueren oder klareren Angaben gemacht werden (als gerade geschehen) kann kaum von einer Zielsetzung geschweige denn von einem Modellkonzept gesprochen werden (vgl. Bossel 2004). Versuchen wir es daher mit einer etwas klareren Abstraktion. Die übergeordneten Lernziele sind im Kasten Lernziele <strong><em>ChallengeOne</em></strong> einzusehen</p>
+</section>
+<section id="challengeone---beschreibung-des-problems" class="level3">
+<h3 class="anchored" data-anchor-id="challengeone---beschreibung-des-problems">ChallengeOne - Beschreibung des Problems</h3>
+<p><img src="media/image4.png" class="img-fluid"></p>
+<p>Ziel unseres Modellierungsvorhabens ist es die Auswirkungen der behaupteten Neigung von Individuen ihren Vorteil zu optimieren (= den höchsten Punkt zu erreichen) räumlich zu analysieren. Das setzt voraus dass im Raum das zu optimierende Gut (Vorteil) inhomogen verteilt ist. Im Gebirge ist die Höhe inhomogen verteilt sonst wäre es nämlich eine Ebene. Das heißt der Raum besteht aus einzelnen Zellen die eine inhomogene Verteilung eines Parameters (Höhe, Nahrung, Geld, Liebe...) aufweisen. Weiterhin seien unsere Agenten (=Turtles) Einzelgänger die nur nach eigener Wahrnehmung des Raumes (also ohne Kommunikation mit anderen Turtles) das Ziel verfolgen, einen Ort (=Patch) möglichst hohen bzw. den höchsten Ort zu erreichen. Realisiert werden soll dieser Ansatz in einer hügeligen Landschaftsstruktur (=Hügellandschaft).</p>
+</section>
+<section id="netlogo-implementierungskonzept" class="level3">
+<h3 class="anchored" data-anchor-id="netlogo-implementierungskonzept">Netlogo Implementierungskonzept</h3>
+<p>Die Implementierung beginnt mit der Identifikation der zentralen Anforderungen aus der Problemstellung. Wie in dem ausführlich diskutierten Beispiel Anasazi sind diese jedoch immer noch unscharf formuliert. Was heißt „Hügellandschaft”? Wie sieht diese aus? Wie viele Hügel gibt es? Wie viele Turtles bevölkern die Welt „Top of the Hill”? Was heißt genau „die Turtles sind Einzelgänger”? Darüber hinaus müssen technische Fragen geklärt werden: Welche Reihenfolge in der Vorgehensweise ist sinnvoll. Was sind die notwendigen Einzelschritte etc.. Im <strong><em>Netlogo-Kasten</em></strong> sind in einer Art Pseudo-Programmcode konkrete Hinweise für einen sinnvollen Ablauf gegeben. Allerdings reicht dies noch nicht aus um los zulegen.</p>
+<section id="die-welt" class="level4">
+<h4 class="anchored" data-anchor-id="die-welt">Die Welt</h4>
+<p>Es ist durchaus sinnvoll (wie bei jeder guten Schöpfungsgeschichte), zunächst die Welt zu erschaffen (=den Modellraum festzulegen). Mit dem Anlegen eines neuen Projekts wird eine Standard-Umgebung generiert (vgl. Netlogo Tutorial 1-3). Diese sollte nach dem Modellzweck (in diesem Fall Stadard / Default) angepasst werden (Tutorial 1-&gt;Controlling the View ).</p>
+<p><strong>Hinweis: Da in Netlogo nicht direkt (wie bei einem rasterbasierten Grafikprogramm oder auch Starlogo) die Patches „angemalt” werden können, muss man dies entweder programmieren oder es muss eine bereits existierende „Welt” eingeladen werden</strong><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p><strong>Vorgehensweise: Für die hier gestellte Aufgabe erscheint die Programmierung einer einfachen Setup-Prozedur sinnvoll. Betrachtet man die Anforderungen müssen folgende Kriterien berücksichtigt werden:</strong></p>
+<ul>
+<li><p>Festlegung einer bestimmten Anzahl von Gipfelpunkten</p></li>
+<li><p>Zuweisen von Höhenwerten für diese Punkte</p></li>
+<li><p>Erzeugen von Talstrukturen zwischen diesen Gipfeln (unter Verwendung der Höhenwerte)</p></li>
+<li><p>Visualisierung der „Landschaft”</p></li>
+</ul>
+<p><strong>Umsetzung:</strong> Natürlich kann man jetzt sofort ins Handbuch schauen und los programmieren. Einfacher und meistens ziel orientierter ist es sich anzuschauen was es an Problemlösungen gibt. In Netlogo werden eine Vielzahl von Beispiel-Modellen und Code-Schnipsel in der Model Library angeboten. Alle sind ausgezeichnet dokumentiert und im Quellcode zusätzlich kommentiert. Als Newbie sollte man unbedingt hier stöbern gehen. Am besten (weil am einfachsten aufgebaut) beginnt man mit der Suche in den Code-Beispielen. Dort springt das <em>Hill Climbing Example ins Auge. Im Intro steht „This example shows how to make turtles climb hills -- or descend into valleys -- using the UPHILL, UPHILL4, DOWNHILL, and DOWNHILL4 commands. The same technique is useful for modeling any kind of creature that follows a gradient in its environment”. Offensichtlich eine ideale Vorlage für unser Problem. Also folgt die konkrete Aufgabe:</em>**</p>
+<p><strong>Aufgabe: Analyse des Quellcodes des <em>Hillclimbing Examples.</em></strong></p>
+<p>Im Prinzip liefert das <strong>Hillclimbing Example</strong> sowohl Welt als auch Turtles. Wir müssen nur einige Anpassungen vornehmen Nach der Analyse sollten die folgenden Fragen relativ leicht beantwortet werden können:***</p>
+<ul>
+<li><p>Wie funktioniert der Befehl <em>diffuse</em>? Können damit kontrolliert &gt; Höhenwerte erzeugt werden?</p></li>
+<li><p>An welcher Stelle des Scripts muss eine Variable eingesetzt werden &gt; um mit Hilfe eines Sliders die Anzahl der Turtles einstellen zu &gt; können?</p></li>
+<li><p>An welcher Stelle muss dies für die Anzahl der Hügel geschehen?</p></li>
+<li><p>Wie kann man über das Interface einstellen ob die Turtles ihren Weg &gt; markieren (<em>pen-up, pen-down</em>)?I</p></li>
+</ul>
+</section>
+<section id="die-turtles" class="level4">
+<h4 class="anchored" data-anchor-id="die-turtles">Die Turtles</h4>
+<p>Eigentlich geht es erst jetzt daran die Turtles in diese Welt zu setzten. Es gilt ein möglichst einfaches Regelwerk zu finden, das die Turtles veranlasst, stets nach den Höhen zu streben. Folgende Kriterien müssen berücksichtigt werden:</p>
+<ul>
+<li><p>Festlegung einer bestimmten Anzahl von Turtles</p></li>
+<li><p>Implementieren einer geeigneten Wahrnehmung des Kriteriums „Höhe des Patches”</p></li>
+<li><p>Implementieren, mit Hilfe dieser Information den höchsten Punkt zu erreichen</p></li>
+<li><p>Visualisierung</p></li>
+</ul>
+<p><strong>Vertiefung:</strong> Weiterhin steht das <strong>Hillclimbing Example</strong> Pate. Allerdings wurde im Lösungsscript ChallengeOneBasic (Kap. ) gewollt (u.a.) auf die Funktion uphill* verzichtet. Warum? Netlogo verfügt über eine oft unübersichtliche Vielzahl von bereits implementieren Funktionen und Primitiven. Anhand der Unterschiede von <em>uphill</em> und dem verwendeten <em>max-one-of neighbors</em> soll bereits zum Einstieg das der Netlogo Programmierung zugrunde liegende Konzept von Befehlen, Funktionen und Primitiven<strong><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> besser verständlich gemacht werden. <em>Uphill</em> (Hillclimbing Example) ist ein Beispiel für eine komfortable Funktion weil es, wie in der Hilfe zu lesen ist, in einem Schritt mehrere Befehle ausführt:„[it] moves the turtle to the neighboring patch with the highest value </strong><em>for patch-variable”.</em> Das heißt <em>uphill</em>l identifiziert die (1) „Was ist benachbart? (2) Was ist der höchste Wert in der Nachbarschaft? Und (3) bewegt das Turtle dorthin. Da sich Agenten (Turtles) häufig entlang einer Gradientenkraft bewegen sollen ist es nahe liegend eine derartige Funktion in Netlogo verfügbar zu haben. Die gleiche Funktion ist allerdings nicht hilfreich, falls z.B. differenziert entschieden werden muss ob in Richtung des höchsten oder zweit höchsten (etc.) Wertes und ob dann 1, 2 oder *n Schritte weit gegangen werden soll oder ob etwa sofort zu diesem Punkt gegangen wird.</p>
+<p>Die Unterschiede zu <em>max-one-of neighbors</em> werden durch eine nähre Betrachtung des Beispielprogramms <em>Neighborhoods Example</em> deutlicher.Für solche Ziele ist der Befehl <em>max-one-of neighbors</em> geeigneter. Er analysiert beliebige Raummerkmale in der Nachbarschaft flexibler. M<em>ax-one-of bzw. min-one-of</em> sucht nach dem höchsten bzw. niedrigsten Wert eines sog. <strong>agentsets. Das Agenset kann eine beliebige (auch frei definierte) Auswahl (Gruppe) von Agenten sein (z.B. <em>neighbors</em> oder spezielle Gruppen von Turtles etc.).</strong></p>
+<p><em>Neighbors</em> ist, vergleichbar mit <em>uphill,</em> eine spezialisierte Funktion, die die Werte in der vollständigen Patch-Nachbarschaft (von Neumann'sche <em>neighbors4</em>, Moor'sche <em>neighbors</em>) mit einem Befehl„erfragt”. Da die Nachbarn patches sind (=unbewegliche Agenten =ein agentset) kann <em>neighbors</em> einfach an <em>max-one-of</em> angehangen werden. Als Resultat liest sich der Befehl wie in der Menschensprache. Diese Vorgehensweise, sowohl beim Zusammensetzten von Befehlen als auch der schrittweisen Substitution allgemeiner Befehle/Funktionen durch komplexere Funktionen, ist LOGO-spezifisch und sollte verstanden und geübt werden.</p>
+<p><img src="media/image6.png" class="img-fluid"> Natürlich zeigt das ChallengeOneBasic-Beispiel, dass es nicht sinnvoll ist (wie es oben allerdings aus didaktischen Gründen durchgeführt wurde) Turtles und Patches während der Implementierung getrennt voneinander zu betrachten. Auch hier sei für das bessere Verständnis auf die Beispielprogramme hingewiesen In Kontext von ChallengeOne sind die folgenden Code Examples sowohl für spezifische Lösungen als auch Programmierkonzepte in Netlogo von besonderer Bedeutung:</p>
+<ul>
+<li><p>Rasternachbarschaft erkunden: Neighborhoods, Moore &amp; Von Neumann, Vision Cone</p></li>
+<li><p>Visualisierung der Daten: Plot Axis</p></li>
+<li><p>Direkte Kommunikation von Agenten: Communication-T-T, Communication-T-P</p></li>
+</ul>
+</section>
+<section id="gipfelstürmer-und-was-nun" class="level4">
+<h4 class="anchored" data-anchor-id="gipfelstürmer-und-was-nun">Gipfelstürmer und was nun?</h4>
+<p>Schneller, besser, weiter, höher... ist nur der Anfang. Es drängen sich eine Reihe von noch nicht gelösten Fragen und Optimierung auf. So z.B. ist die Visualisierung der Hügel und ihre Formgebung noch wenig ansprechend (oder gar naturnah...). Man könnte auch Informationen über den Zustand der Turtles sammeln und visualisieren oder speichern. Eingedenk der Einleitung kann z.B. die aktuelle minimale, mittlere bzw. maximale Höhe der Agenten eine Maßzahl für seinen Glückszustand sein (=je höher das Turtle je glücklicher). Auch ist bei der vorliegenden Implementierung die Frage ungelöst ob und wie es erreicht werden kann, dass alle Turtles irgendwann auf dem höchsten Gipfel stehen (bleiben). Im Kasten <strong><em>Fragen und Untersuchungen</em></strong> sind einige Anregungen für Modellerweiterungen und Fragen aufgelistet.</p>
+<p>Im Script <strong>ChallengeOneAdvanced</strong> sind die meisten dieser Fragen bearbeitet. Es bietet eine gute Grundlage um sich mit der Programmierung und den unterschiedlichen Auswirkungen der Suchstrategien vertraut zu machen. Das Skript ist recht ausführlich kommentiert. Es sollte unbedingt durchgearbeitet werden da es die Grundlage für <strong>ChallengeTwoBoatpeople bildet.</strong></p>
+</section>
+</section>
+</section>
+<section id="verwendete-strukturen-und-befehle-im-skript-challengeonebasic" class="level2">
+<h2 class="anchored" data-anchor-id="verwendete-strukturen-und-befehle-im-skript-challengeonebasic">Verwendete Strukturen und Befehle im Skript ChallengeOneBasic</h2>
+<p><img src="media/image7.png" class="img-fluid"> Beispielhaft für das unter Kap. gezeigte Lösungsskript sind in Tabelle1 die Befehle aufgelistet. Unter beabsichtigte Aktion ist in normaler Sprache skizziert was mit dem Befehl erreicht werden soll während unter Rolle das unbedingt zu berücksichtigende Akteurskonzept von Netlogo dargestellt ist (vgl. auch Tutorial #2: Commands). Für eigene Aktivitäten um etwa die Bearbeitung der Anregungen umsetzten zu können, hilft nur das konsequente Nutzen des NetLogo Programming Guides und NetLogo Dictionaries. Ganz wichtig für das Erlernen von Netlogo ist natürlich das „Abschauen” von Lösungswegen aus Modellen der Model Library. Gerade als Anfänger darf nicht verwirren, dass viele Befehle miteinander kombinierbar sind. So ist z.B. <strong><em>max-one-of neighbors</em></strong> aus den einzelnen Primitiven <strong><em>max-one-of</em></strong> und <strong><em>neighbors</em></strong> zusammengesetzt. Viele Primitive sind mit <strong><em>with</em></strong> erweiterbar (Achtung mit oder ohne Bindestrich erzielt völlig unterschiedliche Resultate). Also einfach im Command Center ausprobieren was bei Eingabe eines Befehls passiert – anders als in der Wirklichkeit kann nichts kaputtgehen. Eine aus meiner Sicht gelungene Zusammenstellung des Programmierkonzepts von Netlogo inkl. der Begriffsdefinition von Agenten, Prozeduren Funktionen und Primitive hat René Doursat für die Second Annual French Complex Systems Summer School erstellt. Hier werden alle notwendigen Konzepte klar strukturiert erläutert. Auf der Seite der Summerschool finden sich noch einige weitere interessante Beiträge unterschiedlicher Autoren<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Beabsichtigte Aktion</strong></td>
+<td style="text-align: left;"><strong>Befehl</strong></td>
+<td style="text-align: left;"><strong>Rolle</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Alle Variablen löschen</td>
+<td style="text-align: left;"><strong><em>clear-all</em></strong></td>
+<td style="text-align: left;"><img src="media/image8.png" style="width:0.16528in;height:0.16528in"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Agenten irgendwas fragen, Agenten irgendetwas ausführen lassen</td>
+<td style="text-align: left;"><strong><em>ask</em></strong></td>
+<td style="text-align: left;"><img src="media/image8.png" style="width:0.16528in;height:0.16528in"><img src="media/image9.png" style="width:0.16528in;height:0.16528in"><img src="media/image10.png" style="width:0.16528in;height:0.16528in"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Beliebige Variable definieren</td>
+<td style="text-align: left;"><strong><em>set, let</em></strong></td>
+<td style="text-align: left;"><img src="media/image8.png" style="width:0.16528in;height:0.16528in"><img src="media/image9.png" style="width:0.16528in;height:0.16528in"><img src="media/image10.png" style="width:0.16528in;height:0.16528in"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Die Aktionsrichtung eines Akteurs festlegen</td>
+<td style="text-align: left;"><strong><em>face</em></strong></td>
+<td style="text-align: left;"><img src="media/image9.png" style="width:0.16528in;height:0.16528in"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Turtles auf dem Patch-Raster entstehen lassen</td>
+<td style="text-align: left;"><strong><em>sprout</em></strong></td>
+<td style="text-align: left;"><img src="media/image10.png" style="width:0.16528in;height:0.16528in"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Irgendwas wiederholen</td>
+<td style="text-align: left;"><strong><em>repeat</em></strong></td>
+<td style="text-align: left;"><img src="media/image8.png" style="width:0.16528in;height:0.16528in"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Werte auf dem Patchraster über Nachbarschaften verteilen</td>
+<td style="text-align: left;"><strong><em>diffuse</em></strong></td>
+<td style="text-align: left;"><img src="media/image8.png" style="width:0.16528in;height:0.16528in"></td>
+</tr>
+</tbody>
+</table>
+<p>Tabelle : Hinweise zu den verwendeten Befehlen</p>
+</section>
+<section id="lösungen" class="level1 H2">
+<h1 class="H2">Lösungen</h1>
+<p>Die Skripte <strong>ChallengeOneBasic und ChallengeOneAdvanced sind auf github verfügbar. Das Basic Script implementiert die Grundfragestellung ohne viel Schnörkel. Im Advanced sind die meisten der im Kasten <em>Fragen und Untersuchungen</em></strong> angeregten Punkte bearbeitet. Vor allem sollte man sich mit der unterschiedlichen Wirkungsweise der Befehle und damit dem Raumverhalten der Turtles auseinandersetzen. Hierzu dient Import turtleposition. Auch die Programmierlogik ist nun erweitert um ifelse abfragen und die Möglichkeit Dateien auszuschreiben und wieder einzulesen.</p>
+</section>
+<section id="zusammenfassung" class="level1 H2">
+<h1 class="H2">Zusammenfassung</h1>
+<p>In dieser ersten Programmierübung sollte ein erster Einstieg in die Programmierung von Mensch-Umweltsystemen erreicht werden. Es wurde gezielt eine etwas zugespitzte Motivationsgrundlage gewählt um zu zeigen dass die wirklichen Fragen sich erst ergeben wenn eine erste Abstraktion implementiert ist und die Resultate interpretiert werden müssen. Gleichzeitig sollte an einem sehr übersichtlichen Beispiel das Grundgerüst der Netlogo Entwicklungsumgebung, diesmal Bottom up verständlich gemacht werden. In der Advanced Version kommen vor allem weitere technische Programmierfähigkeiten hinzu. Hier geht es um bedingte Abfragen und Dateneingabe bzw und -ausgabe.</p>
+</section>
+<section id="bearbeiten-sie-bitte-folgende-aufgaben" class="level1 H2">
+<h1 class="H2">Bearbeiten Sie bitte folgende Aufgaben:</h1>
+<ul>
+<li><p>Dokumentieren Sie die beiden Modelle ChallengeOneBasic und ChallengeOneAdvanced gemäß der Vorgaben von Grimm (2006). Benutzen Sie die Vorlagen von Janssen (Janssen, 2008a).</p></li>
+<li><p>Führen Sie eine Sensitivitätsstudie mit dem Modell ChallengeOneAdvanced durch. Dokumentieren Sie diese gemäß Janssen (2008b).</p>
+<p><span id="_TOC000014" class="anchor"></span></p></li>
+</ul>
+</section>
+<section id="literatur" class="level1 H1">
+<h1 class="H1">Literatur</h1>
+<p>Axtell et al.&nbsp;2002 Population Growth and Collapse in a Multi-Agent Model of the Kayenta Anasazi in Long House Valley. PNAS 99(3): 7275-7279.</p>
+<p>Bartelme, N., 2005. Geoinformatik: Modelle, Funktionen. Berlin: Springer.</p>
+<p>Bolzen 2009. Das Flüchtlingsdrama und die Hilflosigkeit der EU. Quelle: <a href="http://www.welt.de/politik/article3485575/Das-Fluechtlingsdrama-und-die-Hilflosigkeit-der-EU.html" class="uri">http://www.welt.de/politik/article3485575/Das-Fluechtlingsdrama-und-die-Hilflosigkeit-der-EU.html</a>. Zugriff: 21.5.2009</p>
+<p>Bossel, H., 2004. Systeme, Dynamik, Simulation – Modellbildung, Analyse und Simulation komplexer Systeme. Norderstedt/Germany: Books on Demand.Norderstedt/Germany, 2004</p>
+<p>Bridgman, P.W., 1927. The Logic of Modern Physics. New york: Macmillan .</p>
+<p>Dean J S, Gumerman G J, Epstein J M, Axtell R L, Swedlund A C, Parker M T, and McCarroll S. 2000 Understanding Anasazi Culture Change Through Agent Based Modeling in Dynamics in Human and Primate Societies: Agent Based Modeling of Social and Spatial Processes, T. Kohler and G. Gumerman (eds.), Santa Fe Institute. New York &amp; London: Oxford University Press.</p>
+<p>Dienelt 2006': Bootsflüchtlinge Ceuta, Melilla, Lampedusa, Malta, EU-Kommission Hampton Court <a href="http://www.migrationsrecht.net/nachrichten-asylrecht/410-bootsfluechtlinge-ceuta-melilla-lampedusa-malta-eu-kommission-hampton-court.html" class="uri">http://www.migrationsrecht.net/nachrichten-asylrecht/410-bootsfluechtlinge-ceuta-melilla-lampedusa-malta-eu-kommission-hampton-court.html</a>. Zugriff: 21.5.2009</p>
+<p>Eckmüllner, O., 2007. Götterblick – oder was?. Östereichische Forstzeitung, 11, 16.</p>
+<p>Grimm V. Berger U. Bastiansen F. Eliassen S. Ginot V. Giske J. Goss-Custard J. Grand T. Heinz SK. Huse G. Huth A. Jepsen JU. Jorgensen C. Mooij WM. Muller B. Pe'er G. Piou C. Railsback SF. Robbins AM. Robbins MM. Rossmanith E. Ruger N.(2006): A standard protocol for describing individual-based and agent-based models. Ecological Modelling. v198. 115-126. Ecological Modelling. Vol. 198, Issues 1-2, 2006, p.&nbsp;115-126. <a href="http://www.bio.uib.no/inc/pdffiles/Pub/pub3126.pdf" class="uri">http://www.bio.uib.no/inc/pdffiles/Pub/pub3126.pdf</a>. Zugriff: 1.9.2007.</p>
+<p>Gumerman G J, Swedlund A C, Dean J S, and Epstein J M (2003) The Evolution of Social Behavior in the Prehistoric American Southwest. Artificial Life 9: 435-444 #</p>
+<p>Janssen, M., 2008a: ODD of Netlogo implementation of Artificial Anasazi. <a href="https://www.openabm.org/site/download/ArtificialAnasazi/version1/doc" class="uri">https://www.openabm.org/site/download/ArtificialAnasazi/version1/doc</a>. Zugriff: 20.01.2009</p>
+<p>Janssen, M., 2008b: NetLogo 4.02 Code of Replication of the well known Artificial Anasazi model that simulate the population dynamics between 800 and 1350 in the Long House Valley in Arizona. <a href="https://www.openabm.org/site/download/ArtificialAnasazi/version1/code" class="uri">https://www.openabm.org/site/download/ArtificialAnasazi/version1/code</a>. Zugriff: 20.01.2009</p>
+<p>Lutterbeck 2006:Policy Migration in the Mediterranean. <a href="http://www.gcsp.ch/e/publications/Issues_Institutions/ME_Med/Academic_Papers/Lutterbeck-Med_Politics-March06.pdf" class="uri">http://www.gcsp.ch/e/publications/Issues_Institutions/ME_Med/Academic_Papers/Lutterbeck-Med_Politics-March06.pdf</a></p>
+<p>Rasch, T., 2006. Verstehen abstrakter Sachverhalte: Semantische Gestalten in der Konstruktion mentaler Modelle . Berlin: Wissenschaftlicher Verlag.</p>
+<p>Rivett, P., 1972. Principles of model building. The construction of models for decision analysis. London: Wiley.</p>
+<p>Tobler, W.R., 1970. A Computer Movie Simulating Urban Growth in the Detroit Region. Economic Geography, 46, 234. (Herunterladen)</p>
+<p>Werlen, B., 1993. Gibt es eine Geographie ohne Raum? Zum Verhältnis von traditioneller Geographie und zeitgenössischen Gesellschaften.. Erdkunde, 47, 241. (Herunterladen)</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Bernhard von Bülow in einer Reichtagsdebatte am 6. Dezember 1897.<br>
+Quelle: <a href="http://de.wikisource.org/wiki/Deutschlands_Platz_an_der_Sonne" class="uri">http://de.wikisource.org/wiki/Deutschlands_Platz_an_der_Sonne</a>. Zugriff 05.05.2009<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Chris Stangl. <a href="http://readyfornature.com/magazin-artikel.pdf?no_cache=1&amp;L=0&amp;tx_ttnews%5Btt_news%5D=10881&amp;tx_wccategorytree_pi1%5Bcategory%5D=29">http://readyfornature.com/magazin-artikel.pdf?no_cache=1&amp;L=0&amp;tx_ttnews%5Btt_news%5D=10881&amp;tx_wccategorytree_pi1%5Bcategory%5D=29</a>. Zugriff 05.05.2009<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Die Turtles Grafiken sind verändert und bearbeitet aus dem empfehlenswerten Buch von: Colella, V., E. Klopfer, and M. Resnick. 2001. Adventures in Modeling: Exploring Complex, Dynamic Systems with StarLogo. Teachers College Press.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Hierzu stehen etliche Möglichkeiten bereit. Im Anasazi Modell werden Textdateien eingeladen. Es gibt die GIS Extension und es besteht die Möglichkeit, über Datei Import Pixelbilder als Hintergrundwelten einzuladen.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p><em><a href="http://iscpif.csregistry.org/Summer+School+2008">Für eine gute Übersicht der Netlogo Struktur sei das Netlogo Tutorial von René Doursat genannt. Second Annual French Complex Systems Summer School http://iscpif.csregistry.org/Summer+School+2008</a> . Zugriff 2.5.2009.</em><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p><em><a href="http://iscpif.csregistry.org/Summer+School+2008">Second Annual French Complex Systems Summer School http://iscpif.csregistry.org/Summer+School+2008</a> . Zugriff 2.5.2009.</em><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.quarto\.org\/custom");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="gisma-courses/LV-19-050-189-ABM" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">LV-19-050-189-ABM (2023)</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
