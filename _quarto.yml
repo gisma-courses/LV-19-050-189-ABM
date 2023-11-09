@@ -1,0 +1,69 @@
+project: 
+  type: website
+  output-dir: docs
+website:
+  open-graph: true
+  page-navigation: true  
+  title: "Agentenbasierte Modellierung LV-19-050-189-ABM"
+  site-url: https://gisma-courses.github.io/LV-19-050-189-ABM
+  repo-url: https://github.com/gisma-courses/LV-19-050-189-ABM
+  repo-actions: [edit, issue]
+  search: 
+    location: navbar
+    type: textbox
+  page-footer: "LV-19-050-189-ABM (2023)" 
+  twitter-card:
+    creator: "@gisma"
+  comments:
+   utterances:
+     repo: gisma-courses/LV-19-050-189-ABM
+  navbar:
+    logo: /images/logooil.jpg
+
+
+  sidebar:
+    # logo: /images/logo.jpg
+    pinned: true
+    align: center
+    style: "docked"
+    collapse-level: 1
+    contents:
+      - section: "Einführung"
+        contents:
+          - index.md
+      - text: "---"
+      - section: "Challenge One"
+        contents: 
+          - challengeOne/ch1.qmd
+          #- paul_tutorial/02_ValidationDataCollection.qmd
+      - text: "---"
+      #- section: "Microclimate Data Retrieval & Spatial Data Interpolation"
+      #  contents:
+      #    - mc_session/mc1.qmd
+      #    - mc_session/mc3.qmd
+      #    - mc_session/mc4.qmd
+      #- text: "---"
+      #- section: "Machine Learning"
+      #  contents:
+      #    - Machine_Learning_Session/ML_AOA.qmd
+          # - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-introduction/
+          #   text: Basic Readings        
+          # - href: https://gisma-courses.github.io/LV-uav-workflow/modules/module-fieldwork/
+          #   text: uav/Flight Planning
+      - text: "---"
+##format: dokuwiki
+format:
+  html:
+    theme:
+      light: lumen
+      dark: [lumen, css/theme-dark.scss]
+    code-background: true
+    code-copy: true
+    css: css/styles.css
+    toc: true
+    link-external-icon: true
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/www\.quarto\.org\/custom'
+# filters:
+#   - include-files.lua
+#   - quarto
