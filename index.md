@@ -20,7 +20,7 @@ comments: false
 
 
 
-![Polsterberger Hubhaus 2022](/images/logo.png)
+![](/images/logo.png)
 
 
 
