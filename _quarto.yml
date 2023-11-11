@@ -43,8 +43,7 @@ website:
             text: Challenge One Basic Model
           - href: https://github.com/gisma-courses/LV-19-050-189-ABM/blob/main/assets/Challenge1Advanced.nlogo
             text: Challenge One Advanced Model
-          - href: https://github.com/gisma-courses/LV-19-050-189-ABM/blob/main/assets/Netlogo_Challenge1.pdf
-            text: Challenge Text
+
       #- text: "---"
       #- section: "Machine Learning"
       #  contents:
