@@ -1,10 +1,10 @@
 ---
-title: "ChallengeOne -- Top of the World"
+title: "ChallengeOne"
 
 ---
 
 
-## ChallengeOne -- "Top of the World" 
+## "Top of the World" 
     
 
 Modelle sind -wie bereits einführend erwähnt- spezifische,
