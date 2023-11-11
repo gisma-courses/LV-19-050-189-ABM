@@ -34,7 +34,6 @@ website:
       - text: "---"
       - section: "Challenge One"
         contents: 
-          - modeling/modellierung_warmup_1.qmd
           - modeling/modellierung_warmup_2.qmd
       - text: "---"
       - section: "Material"
