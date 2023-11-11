@@ -22,7 +22,8 @@ comments: false
 
 ![](/images/logo.png)
 
-## Einführung
+
+# Einführung
 
 Das Ableiten wissenschaftlicher Konzepte, bzw. allgemeiner Ideen in eine
 angemessene Modellstruktur ist ein komplexer und nicht schematisch zu

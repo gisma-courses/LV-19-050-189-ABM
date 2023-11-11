@@ -28,7 +28,7 @@ website:
     style: "docked"
     collapse-level: 1
     contents:
-      - section: "Einführung"
+      - section: "Abstraktion und Modellierung"
         contents:
           - index.md
       - text: "---"
