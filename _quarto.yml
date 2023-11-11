@@ -34,8 +34,8 @@ website:
       - text: "---"
       - section: "Challenge One"
         contents: 
-          - challengeOne/ch1.qmd
-          #- paul_tutorial/02_ValidationDataCollection.qmd
+          - modeling/modellierung_warmup_1.qmd
+          - modeling/modellierung_warmup_2.qmd
       - text: "---"
       - section: "Material"
         contents:
