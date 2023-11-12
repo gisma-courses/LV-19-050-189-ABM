@@ -122,9 +122,13 @@ Gerade als Anfänger darf nicht verwirren, dass viele Befehle miteinander kombin
 
 ![](../images/image6.png) Tabelle : Hinweise zu den verwendeten Befehlen
 
-## Übungen
+## Hinweise und Lösungen
 
 Die Skripte **ChallengeOneBasic** und **ChallengeOneAdvanced** sind auf github [verfügbar](https://github.com/gisma-courses/LV-19-050-189-ABM/tree/main/assets) Das Basic Script implementiert die Grundfragestellung ohne viel Schnörkel. Im Advanced sind die meisten der im Kasten **Fragen und Untersuchungen** angeregten Punkte bearbeitet. Vor allem sollte man sich mit der unterschiedlichen Wirkungsweise der Befehle und damit dem Raumverhalten der Turtles auseinandersetzen. Hierzu dient Import turtleposition. Auch die Programmierlogik ist nun erweitert um ifelse abfragen und die Möglichkeit Dateien auszuschreiben und wieder einzulesen.
+![](../images/bm.png) 
+
+![](../images/am.png) 
+
 
 ::: {.callout-tip appearance="minimal"}
 **Sensitivitätsanalyse:**
