@@ -34,8 +34,8 @@ Der umgekehrte Weg top down hingegen verfolgt eher den Ansatz „Spring ins kalt
 
 Beide Konzepte haben didaktisch und pragmatisch bekanntermaßen Vor- und Nachteile. In unserem Fall ist der Versuch mit einem existierenden recht komplexen Modell zu beginnen, der Erfahrung geschuldet, dass mit dem bottom up Ansatz unverhältnismäßig viel Zeit benötigt wird um erste inhaltlich auch nur einigermaßen interessante Modelle verstehen und (weiter-)entwickeln zu können.
 
-~*Bossel,\ H.,\ 2004.\ Systeme,\ Dynamik,\ Simulation\ --\ Modellbildung,\ Analyse\ und\ Simulation\ komplexer\ Systeme.\ Norderstedt/Germany:\ Books\ on\ Demand.Norderstedt/Germany,\ 2004\
-Bridgman,\ P.W.,\ 1927.\ The\ Logic\ of\ Modern\ Physics.\ New\ york:\ Macmillan.\
-Eckmüllner,\ O.,\ 2007.\ Götterblick\ --\ oder\ was?.\ Östereichische\ Forstzeitung,\ 11,\ 16.\
-Rasch,\ T.,\ 2006.\ Verstehen\ abstrakter\ Sachverhalte:\ Semantische\ Gestalten\ in\ der\ Konstruktion\ mentaler\ Modelle\ .\ Berlin:\ Wissenschaftlicher\ Verlag.\
-Rivett,\ P.,\ 1972.\ Principles\ of\ model\ building.\ The\ construction\ of\ models\ for\ decision\ analysis.\ London:\ Wiley.*~
+~*Bossel, H., 2004, Systeme - Dynamik - Simulation - Modellbildung, Analyse und Simulation komplexer Systeme, Norderstedt/Germany Books on Demand, Norderstedt Germany\
+Bridgman, P.W., 1927, The Logic of Modern Physics, New York Macmillan. \
+Eckmüllner, O., 2007.Götterblick-oder was?, Östereichische Forstzeitung, 11,16\
+Rasch, T., 2006. Verstehen abstrakter Sachverhalte: Semantische Gestalten in der Konstruktion mentaler Modelle, Berlin Wissenschaftlicher Verlag \
+Rivett, P., 1972, Principles of model building, The construction of models for decision analysis, London Wiley*~
