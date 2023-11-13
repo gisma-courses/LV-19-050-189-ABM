@@ -192,6 +192,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#verwendete-strukturen-und-befehle-im-skript-challengeonebasic" id="toc-verwendete-strukturen-und-befehle-im-skript-challengeonebasic" class="nav-link" data-scroll-target="#verwendete-strukturen-und-befehle-im-skript-challengeonebasic">Verwendete Strukturen und Befehle im Skript ChallengeOneBasic</a></li>
   <li><a href="#challengeoneadvanced" id="toc-challengeoneadvanced" class="nav-link" data-scroll-target="#challengeoneadvanced">ChallengeOneAdvanced</a></li>
+  <li><a href="#gipfelstürmer-und-was-nun" id="toc-gipfelstürmer-und-was-nun" class="nav-link" data-scroll-target="#gipfelstürmer-und-was-nun">Gipfelstürmer und was nun?</a></li>
   <li><a href="#zusammenfassung" id="toc-zusammenfassung" class="nav-link" data-scroll-target="#zusammenfassung">Zusammenfassung</a></li>
   <li><a href="#literatur" id="toc-literatur" class="nav-link" data-scroll-target="#literatur">Literatur</a></li>
   </ul>
@@ -293,8 +294,19 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Implementieren, mit Hilfe dieser Information den höchsten Punkt zu erreichen</p></li>
 <li><p>Visualisierung</p></li>
 </ul>
-<p><strong>Vertiefung:</strong> Weiterhin steht das <strong>Hillclimbing Example</strong> Pate. Allerdings wurde im Lösungsscript ChallengeOneBasic gewollt auf die Funktion <strong>uphill</strong> verzichtet. Warum? Netlogo verfügt über eine oft unübersichtliche Vielzahl von bereits implementieren Funktionen (sog. Primitive). Anhand der Unterschiede von <em>uphill</em> und dem verwendeten <em>max-one-of neighbors</em> soll bereits zum Einstieg das der Netlogo Programmierung zugrunde liegende Konzept von Befehlen, Funktionen und Primitiven<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> besser verstanden werden. ::: {.callout-tip appearance=“simple”} <em>Uphill</em> (Hillclimbing Example) ist ein Beispiel für eine komfortable existierende Funktion weil es, wie in der Hilfe zu lesen ist, in einem Schritt mehrere Befehle ausführt:</p>
-<p>„[it] moves the turtle to the neighboring patch with the highest value **<em>for patch-variable”.</em> :::</p>
+<p>Es steht das <strong>Hillclimbing Example</strong> aus der Programm-Biliothek Pate. Allerdings wird im Lösungsscript <em>ChallengeOneBasic</em> bewußt auf die Funktion <strong>uphill</strong> verzichtet.</p>
+<p>Warum? Netlogo verfügt über eine oft unübersichtliche Vielzahl von bereits implementieren Funktionen (sog. Primitive). Anhand der Unterschiede von <em>uphill</em> und dem verwendeten <em>max-one-of neighbors</em> soll bereits zum Einstieg das der Netlogo Programmierung zugrunde liegende Konzept von Befehlen, Funktionen und Primitiven<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> besser verstanden werden.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>Uphill</em> (Hillclimbing Example) ist ein Beispiel für eine komfortable existierende Funktion weil es, wie in der Hilfe zu lesen ist, in einem Schritt mehrere Befehle ausführt:</p>
+<p>„[it] moves the turtle to the neighboring patch with the highest value **<em>for patch-variable”.</em></p>
+</div>
+</div>
+</div>
 <p>Das heißt <em>uphill</em> identifiziert die (1) „Was ist benachbart? (2) Was ist der höchste Wert in der Nachbarschaft? Und (3) bewegt das Turtle dorthin. Da sich Agenten (Turtles) häufig entlang einer Gradientenkraft bewegen sollen ist es sinnvoll und hifreich eine derartige Funktion in Netlogo verfügbar zu haben. Die gleiche Funktion ist allerdings nicht hilfreich, falls z.B. differenziert entschieden werden muss ob in Richtung des höchsten oder zweithöchsten (etc.) Wertes und ob dann 1, 2 oder *n Schritte weit gegangen werden soll oder ob etwa sofort zu diesem Punkt gegangen wird.</p>
 <p>Die Unterschiede zu <em>max-one-of neighbors</em> werden durch eine nähere Betrachtung des Beispielprogramms <em>Neighborhoods Example</em> deutlicher.Für solche Ziele ist der Befehl <em>max-one-of neighbors</em> geeigneter. Er analysiert beliebige Raummerkmale in der Nachbarschaft flexibler. <em>max-one-of</em> bzw. <em>min-one-of</em> sucht nach dem höchsten bzw. niedrigsten Wert eines sog. <strong>agentsets</strong>. Das Agenset kann eine beliebige (auch frei definierte) Auswahl (Gruppe) von Agenten sein (z.B. <em>neighbors</em> oder spezielle Gruppen von Turtles etc.).</p>
 <p><em>Neighbors</em> ist, vergleichbar mit <em>uphill,</em> eine spezialisierte Funktion, die die Werte in der vollständigen Patch-Nachbarschaft (von Neumann’sche <em>neighbors4</em>, Moor’sche <em>neighbors</em>) mit einem Befehl„erfragt”. Da die Nachbarn patches sind (=unbewegliche Agenten =ein agentset) kann <em>neighbors</em> einfach an <em>max-one-of</em> angehangen werden. Als Resultat liest sich der Befehl wie in der Menschensprache. Diese Vorgehensweise, sowohl beim Zusammensetzten von Befehlen als auch der schrittweisen Substitution allgemeiner Befehle/Funktionen durch komplexere Funktionen, ist LOGO-spezifisch und sollte verstanden und geübt werden.</p>
@@ -321,8 +333,9 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="../images/image5.png" class="img-fluid"></p>
 <p>Die Skripte <strong>ChallengeOneBasic</strong> und <strong>ChallengeOneAdvanced</strong> sind auf github <a href="https://github.com/gisma-courses/LV-19-050-189-ABM/tree/main/assets">verfügbar</a>. Das Basic Script implementiert die Grundfragestellung ohne viel Schnörkel. <img src="../images/bm.png" class="img-fluid"> <em>Screenshot ChallengeOneBasic</em></p>
 <p>Im <em>ChallengeOneAdvanced</em> sind die im Kasten <strong>Fragen und Untersuchungen</strong> angeregten Punkte eingearbeitet. Vor allem sind die unterschiedlichen räumlichen Wirkungsweisen der Suchlogiken und das resultierende Raumverhalten der Turtles auseinandersetzen. Hierzu dient <em>Import Turtleposition</em>. Technisch wurde das Programm um <em>ifelse</em> Abfragen und die Möglichkeit Daten auszuschreiben/einzulesen erweitert. <img src="../images/am.png" class="img-fluid"> <em>Screenshot ChallengeOneAdvancend</em></p>
-<section id="gipfelstürmer-und-was-nun" class="level4">
-<h4 class="anchored" data-anchor-id="gipfelstürmer-und-was-nun">Gipfelstürmer und was nun?</h4>
+</section>
+<section id="gipfelstürmer-und-was-nun" class="level2">
+<h2 class="anchored" data-anchor-id="gipfelstürmer-und-was-nun">Gipfelstürmer und was nun?</h2>
 <p>Schneller, besser, weiter, höher… ist nur der Anfang. Es drängen sich eine Reihe von noch nicht gelösten Fragen und Optimierung auf. So z.B. ist die Visualisierung der Hügel und ihre Formgebung noch wenig ansprechend (oder gar naturnah…). Man könnte auch Informationen über den Zustand der Turtles sammeln und visualisieren oder speichern. Eingedenk der Einleitung kann z.B. die aktuelle minimale, mittlere bzw. maximale Höhe der Agenten eine Maßzahl für seinen Glückszustand sein (=je höher das Turtle je glücklicher). Auch ist bei der vorliegenden Implementierung die Frage ungelöst ob und wie es erreicht werden kann, dass alle Turtles irgendwann auf dem höchsten Gipfel stehen (bleiben).</p>
 <div class="callout callout-style-simple callout-tip no-icon">
 <div class="callout-body d-flex">
@@ -339,7 +352,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-</section>
 </section>
 <section id="zusammenfassung" class="level2">
 <h2 class="anchored" data-anchor-id="zusammenfassung">Zusammenfassung</h2>

@@ -86,11 +86,18 @@ Eigentlich geht es erst jetzt daran die Turtles in diese Welt zu setzten. Es gil
 
 -   Visualisierung
 
-**Vertiefung:** Weiterhin steht das **Hillclimbing Example** Pate. Allerdings wurde im Lösungsscript ChallengeOneBasic gewollt auf die Funktion **uphill** verzichtet. Warum? Netlogo verfügt über eine oft unübersichtliche Vielzahl von bereits implementieren Funktionen (sog. Primitive). Anhand der Unterschiede von *uphill* und dem verwendeten *max-one-of neighbors* soll bereits zum Einstieg das der Netlogo Programmierung zugrunde liegende Konzept von Befehlen, Funktionen und Primitiven[^4] besser verstanden werden. ::: {.callout-tip appearance="simple"} *Uphill* (Hillclimbing Example) ist ein Beispiel für eine komfortable existierende Funktion weil es, wie in der Hilfe zu lesen ist, in einem Schritt mehrere Befehle ausführt:
+Es steht das **Hillclimbing Example** aus der Programm-Biliothek Pate. Allerdings wird im Lösungsscript *ChallengeOneBasic* bewußt auf die Funktion **uphill** verzichtet.
+
+Warum? Netlogo verfügt über eine oft unübersichtliche Vielzahl von bereits implementieren Funktionen (sog. Primitive). Anhand der Unterschiede von *uphill* und dem verwendeten *max-one-of neighbors* soll bereits zum Einstieg das der Netlogo Programmierung zugrunde liegende Konzept von Befehlen, Funktionen und Primitiven[^4] besser verstanden werden. 
+
+::: {.callout-tip appearance="simple"}
+
+*Uphill* (Hillclimbing Example) ist ein Beispiel für eine komfortable existierende Funktion weil es, wie in der Hilfe zu lesen ist, in einem Schritt mehrere Befehle ausführt:
 
 [^4]: Für eine gute Übersicht der Netlogo Struktur sei das [Netlogo Tutorial von René Doursat](http://doursat.free.fr/docs/MCSS_F15/MCSS_F15_4_NetLogo.pdf) genannt. Zugriff 11/11/23.
 
-„\[it\] moves the turtle to the neighboring patch with the highest value \*\**for patch-variable".* :::
+„\[it\] moves the turtle to the neighboring patch with the highest value \*\**for patch-variable".* 
+:::
 
 Das heißt *uphill* identifiziert die (1) „Was ist benachbart? (2) Was ist der höchste Wert in der Nachbarschaft? Und (3) bewegt das Turtle dorthin. Da sich Agenten (Turtles) häufig entlang einer Gradientenkraft bewegen sollen ist es sinnvoll und hifreich eine derartige Funktion in Netlogo verfügbar zu haben. Die gleiche Funktion ist allerdings nicht hilfreich, falls z.B. differenziert entschieden werden muss ob in Richtung des höchsten oder zweithöchsten (etc.) Wertes und ob dann 1, 2 oder \*n Schritte weit gegangen werden soll oder ob etwa sofort zu diesem Punkt gegangen wird.
 
@@ -135,7 +142,7 @@ Technisch wurde das Programm um *ifelse* Abfragen und die Möglichkeit Daten aus
 ![](../images/am.png) 
 *Screenshot ChallengeOneAdvancend*
 
-#### Gipfelstürmer und was nun?
+## Gipfelstürmer und was nun?
 
 Schneller, besser, weiter, höher... ist nur der Anfang. Es drängen sich eine Reihe von noch nicht gelösten Fragen und Optimierung auf. So z.B. ist die Visualisierung der Hügel und ihre Formgebung noch wenig ansprechend (oder gar naturnah...). Man könnte auch Informationen über den Zustand der Turtles sammeln und visualisieren oder speichern. Eingedenk der Einleitung kann z.B. die aktuelle minimale, mittlere bzw. maximale Höhe der Agenten eine Maßzahl für seinen Glückszustand sein (=je höher das Turtle je glücklicher). Auch ist bei der vorliegenden Implementierung die Frage ungelöst ob und wie es erreicht werden kann, dass alle Turtles irgendwann auf dem höchsten Gipfel stehen (bleiben). 
 
