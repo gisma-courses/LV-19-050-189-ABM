@@ -188,13 +188,17 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#schneller-besser-weiter-höher" id="toc-schneller-besser-weiter-höher" class="nav-link active" data-scroll-target="#schneller-besser-weiter-höher">Schneller, besser, weiter, höher</a>
   <ul class="collapse">
   <li><a href="#challengeone---beschreibung-des-problems" id="toc-challengeone---beschreibung-des-problems" class="nav-link" data-scroll-target="#challengeone---beschreibung-des-problems">ChallengeOne - Beschreibung des Problems</a></li>
-  <li><a href="#netlogo-implementierungskonzept" id="toc-netlogo-implementierungskonzept" class="nav-link" data-scroll-target="#netlogo-implementierungskonzept">Netlogo Implementierungskonzept</a></li>
+  <li><a href="#netlogo-implementierungskonzept" id="toc-netlogo-implementierungskonzept" class="nav-link" data-scroll-target="#netlogo-implementierungskonzept">Netlogo Implementierungskonzept</a>
+  <ul class="collapse">
+  <li><a href="#die-welt" id="toc-die-welt" class="nav-link" data-scroll-target="#die-welt">Die Welt</a></li>
+  <li><a href="#die-turtles" id="toc-die-turtles" class="nav-link" data-scroll-target="#die-turtles">Die Turtles</a></li>
   </ul></li>
   <li><a href="#verwendete-strukturen-und-befehle-im-skript-challengeonebasic" id="toc-verwendete-strukturen-und-befehle-im-skript-challengeonebasic" class="nav-link" data-scroll-target="#verwendete-strukturen-und-befehle-im-skript-challengeonebasic">Verwendete Strukturen und Befehle im Skript ChallengeOneBasic</a></li>
   <li><a href="#challengeoneadvanced" id="toc-challengeoneadvanced" class="nav-link" data-scroll-target="#challengeoneadvanced">ChallengeOneAdvanced</a></li>
   <li><a href="#gipfelstürmer-und-was-nun" id="toc-gipfelstürmer-und-was-nun" class="nav-link" data-scroll-target="#gipfelstürmer-und-was-nun">Gipfelstürmer und was nun?</a></li>
   <li><a href="#zusammenfassung" id="toc-zusammenfassung" class="nav-link" data-scroll-target="#zusammenfassung">Zusammenfassung</a></li>
   <li><a href="#literatur" id="toc-literatur" class="nav-link" data-scroll-target="#literatur">Literatur</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/gisma-courses/LV-19-050-189-ABM/edit/main/modeling/modellierung_warmup_2.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/gisma-courses/LV-19-050-189-ABM/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -222,8 +226,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Zunächst geht es um die Entwicklung einer Motivation und Fragestellung. Nach Festlegung der Zielsetzung geht es dann um die Hypothesen die untersucht werden sollen. Zur bearbeitung benötige ich ein Konzept oder einen Wirkungsgraph der die funktionalen und regelhaften Wechselwirkungen beschreibt.</p>
 <p>Erst dann stellt sich die Frage <em>„Wie programmiere ich das Ganze?“</em>. Leider ist es nicht nur zu Beginn wiissenschaftlicher Modellbildung schwierig diese Ebenen zu trennen und in effizienter Weise zu bearbeiten. Es gibt kein wirkliches Patentrezept. Die Übung <strong>ChallengeOne</strong> versucht eine praxisorientierte Vorgehensweise aufzuzeigen. Lernziel ist es durch geschicktes und geeignetes Anpassen von Beispielmodellen (=Netlogo-Skripten) und ein eigenes Modell zu erstellen und es schrittweise zu erweitern und verbessern. Dabei ist es, zumindest zu Beginn, nicht zwingend erforderlich den Programmcode (vollständig) zu verstehen (das kommt hoffentlich mit der Übung…), sondern eher darum zu folgende Ziel zu erreichen: „Beurteile ich das Resultat des Programmcodes hinsichtlich meiner Zielsetzung als zureichend?”</p>
 <p>Beginnen wir also. <img src="../images/image3.png" class="img-fluid"></p>
-<section id="schneller-besser-weiter-höher" class="level2">
-<h2 class="anchored" data-anchor-id="schneller-besser-weiter-höher">Schneller, besser, weiter, höher</h2>
+<section id="schneller-besser-weiter-höher" class="level1">
+<h1>Schneller, besser, weiter, höher</h1>
 <p>Motivationsgrundlage unseres Modellierungsvorhabens ist das alte Spiel: Alle wollen nach Möglichkeit besser sein als die Anderen oder zumindest für sich das Beste herausholen – ganz nach dem in gewissen Kreisen berühmten Ausspruch von von Bülow <em>„Mit einem Worte: wir wollen niemand in den Schatten stellen, aber wir verlangen auch unseren Platz an der Sonne”</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. In unserem Falle ist der „Platz an der Sonne” nicht Namibia oder Togo, sondern alle wollen frei nach Chris Stangl<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> und Kollegen die „Seven Summits” packen – ohne jede weitere Motivation nur auf einem der höchsten Berggipfel<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> stehen.</p>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
@@ -236,18 +240,18 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>So einfach es auf den ersten Blick erscheint, alle Turtles auf einen Berg zu bekommen, so können doch viele unterschiedliche Abstraktions- und Implementierungs-Konzepte genutzt werden. Was soll das heißen? Nun wenn keine genaueren oder klareren Angaben gemacht werden kann kaum von einer konkreten Zielsetzung geschweige denn von einem Modellkonzept gesprochen werden (vgl. Bossel 2004). Versuchen wir es daher mit einer etwas klareren Abstraktion. Die übergeordneten Lernziele sind im Kasten Lernziele <strong>ChallengeOne</strong> einzusehen</p>
-<section id="challengeone---beschreibung-des-problems" class="level3">
-<h3 class="anchored" data-anchor-id="challengeone---beschreibung-des-problems">ChallengeOne - Beschreibung des Problems</h3>
+<section id="challengeone---beschreibung-des-problems" class="level2">
+<h2 class="anchored" data-anchor-id="challengeone---beschreibung-des-problems">ChallengeOne - Beschreibung des Problems</h2>
 <p>Ziel unseres Modellierungsvorhabens ist es die Auswirkungen der behaupteten Neigung von Individuen ihren Vorteil zu optimieren (= den höchsten Punkt zu erreichen) räumlich zu analysieren. Das setzt voraus dass im Raum das zu optimierende Gut (Vorteil) inhomogen verteilt ist. Im Gebirge ist die Höhe inhomogen verteilt sonst wäre es nämlich eine Ebene. Das heißt der Raum besteht aus einzelnen Zellen die eine inhomogene Verteilung eines Parameters (Höhe, Nahrung, Geld, Liebe…) aufweisen. Weiterhin seien unsere Agenten (=Turtles) Einzelgänger die nur nach eigener Wahrnehmung des Raumes (also ohne Kommunikation mit anderen Turtles) das Ziel verfolgen, einen Ort (=Patch) möglichst hohen bzw. den höchsten Ort zu erreichen. Realisiert werden soll dieser Ansatz in einer hügeligen Landschaftsstruktur (=Hügellandschaft).</p>
 </section>
-<section id="netlogo-implementierungskonzept" class="level3">
-<h3 class="anchored" data-anchor-id="netlogo-implementierungskonzept">Netlogo Implementierungskonzept</h3>
+<section id="netlogo-implementierungskonzept" class="level2">
+<h2 class="anchored" data-anchor-id="netlogo-implementierungskonzept">Netlogo Implementierungskonzept</h2>
 <p>Die Implementierung beginnt mit der Identifikation der zentralen Anforderungen aus der Problemstellung. Aber was heißt eigentlich <em>„Hügellandschaft”</em>? Wie sieht diese aus? Wie viele Hügel gibt es? Wie viele Turtles bevölkern die Welt „Top of the Hill”? Was genau heißt <em>„die Turtles sind Einzelgänger”</em>?</p>
 <p>Darüber hinaus müssen technische Fragen geklärt werden: Welche Reihenfolge in der Vorgehensweise ist sinnvoll. Was sind die notwendigen Einzelschritte etc..</p>
 <p><img src="../images/image4.png" class="img-fluid"></p>
 <p>Im obenstehendem Kasten sind in einer Art Pseudo-Programmcode konkrete Hinweise für einen sinnvollen Ablauf gegeben. Allerdings reicht dies noch nicht aus um los zulegen.</p>
-<section id="die-welt" class="level4">
-<h4 class="anchored" data-anchor-id="die-welt">Die Welt</h4>
+<section id="die-welt" class="level3">
+<h3 class="anchored" data-anchor-id="die-welt">Die Welt</h3>
 <p>Es ist durchaus sinnvoll (wie bei jeder guten Schöpfungsgeschichte), zunächst die Welt zu erschaffen (=den Modellraum festzulegen). Mit dem Anlegen eines neuen Projekts wird eine Standard-Umgebung generiert (<a href="https://ccl.northwestern.edu/netlogo/docs/tutorial1.html">vgl. Netlogo Tutorial 1</a>,<a href="https://ccl.northwestern.edu/netlogo/docs/tutorial2.html">2</a>,<a href="https://ccl.northwestern.edu/netlogo/docs/tutorial3.html">3</a>). Diese sollte nach dem Modellzweck (in diesem Fall Standard/Default) angepasst werden (<a href="https://ccl.northwestern.edu/netlogo/docs/tutorial1.html#controlling-the-view"><em>Tutorial 1-&gt;Controlling the View</em></a>).</p>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
@@ -285,8 +289,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Wie kann man über das Interface einstellen ob die Turtles ihren Weg markieren (<em>pen-up, pen-down</em>)?</p></li>
 </ul>
 </section>
-<section id="die-turtles" class="level4">
-<h4 class="anchored" data-anchor-id="die-turtles">Die Turtles</h4>
+<section id="die-turtles" class="level3">
+<h3 class="anchored" data-anchor-id="die-turtles">Die Turtles</h3>
 <p>Eigentlich geht es erst jetzt daran die Turtles in diese Welt zu setzten. Es gilt ein möglichst einfaches Regelwerk zu finden, das die Turtles veranlasst, stets nach den Höhen zu streben. Folgende Kriterien müssen berücksichtigt werden:</p>
 <ul>
 <li><p>Festlegung einer bestimmten Anzahl von Turtles</p></li>
@@ -316,7 +320,6 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Visualisierung der Daten: Plot Axis</p></li>
 <li><p>Direkte Kommunikation von Agenten: Communication-T-T, Communication-T-P</p></li>
 </ul>
-</section>
 </section>
 </section>
 <section id="verwendete-strukturen-und-befehle-im-skript-challengeonebasic" class="level2">
@@ -363,6 +366,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Janssen, M., 2008b: NetLogo 4.02 Code of Replication of the well known Artificial Anasazi model that simulate the population dynamics between 800 and 1350 in the Long House Valley in Arizona. https://www.comses.net/codebases/2222/releases/1.1.0/. Zugriff: 12/11/23</p>
 
 
+</section>
 </section>
 
 

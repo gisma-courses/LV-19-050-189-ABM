@@ -10,7 +10,7 @@ Erst dann stellt sich die Frage *„Wie programmiere ich das Ganze?"*. Leider is
 
 Beginnen wir also. ![](../images/image3.png) 
 
-## Schneller, besser, weiter, höher
+# Schneller, besser, weiter, höher
 
 Motivationsgrundlage unseres Modellierungsvorhabens ist das alte Spiel: Alle wollen nach Möglichkeit besser sein als die Anderen oder zumindest für sich das Beste herausholen -- ganz nach dem in gewissen Kreisen berühmten Ausspruch von von Bülow *„Mit einem Worte: wir wollen niemand in den Schatten stellen, aber wir verlangen auch unseren Platz an der Sonne"*[^1]. In unserem Falle ist der „Platz an der Sonne" nicht Namibia oder Togo, sondern alle wollen frei nach Chris Stangl[^2] und Kollegen die „Seven Summits" packen -- ohne jede weitere Motivation nur auf einem der höchsten Berggipfel[^3] stehen.
 
@@ -26,11 +26,11 @@ Ziel dieser Übung ist es alle beweglichen Agenten (turtles) auf den höchsten (
 
 So einfach es auf den ersten Blick erscheint, alle Turtles auf einen Berg zu bekommen, so können doch viele unterschiedliche Abstraktions- und Implementierungs-Konzepte genutzt werden. Was soll das heißen? Nun wenn keine genaueren oder klareren Angaben gemacht werden kann kaum von einer konkreten Zielsetzung geschweige denn von einem Modellkonzept gesprochen werden (vgl. Bossel 2004). Versuchen wir es daher mit einer etwas klareren Abstraktion. Die übergeordneten Lernziele sind im Kasten Lernziele **ChallengeOne** einzusehen
 
-### ChallengeOne - Beschreibung des Problems
+## ChallengeOne - Beschreibung des Problems
 
 Ziel unseres Modellierungsvorhabens ist es die Auswirkungen der behaupteten Neigung von Individuen ihren Vorteil zu optimieren (= den höchsten Punkt zu erreichen) räumlich zu analysieren. Das setzt voraus dass im Raum das zu optimierende Gut (Vorteil) inhomogen verteilt ist. Im Gebirge ist die Höhe inhomogen verteilt sonst wäre es nämlich eine Ebene. Das heißt der Raum besteht aus einzelnen Zellen die eine inhomogene Verteilung eines Parameters (Höhe, Nahrung, Geld, Liebe...) aufweisen. Weiterhin seien unsere Agenten (=Turtles) Einzelgänger die nur nach eigener Wahrnehmung des Raumes (also ohne Kommunikation mit anderen Turtles) das Ziel verfolgen, einen Ort (=Patch) möglichst hohen bzw. den höchsten Ort zu erreichen. Realisiert werden soll dieser Ansatz in einer hügeligen Landschaftsstruktur (=Hügellandschaft).
 
-### Netlogo Implementierungskonzept
+## Netlogo Implementierungskonzept
 
 Die Implementierung beginnt mit der Identifikation der zentralen Anforderungen aus der Problemstellung. Aber was heißt eigentlich *„Hügellandschaft"*? Wie sieht diese aus? Wie viele Hügel gibt es? Wie viele Turtles bevölkern die Welt „Top of the Hill"? Was genau heißt *„die Turtles sind Einzelgänger"*?
 
@@ -40,7 +40,7 @@ Darüber hinaus müssen technische Fragen geklärt werden: Welche Reihenfolge in
 
 Im obenstehendem Kasten sind in einer Art Pseudo-Programmcode konkrete Hinweise für einen sinnvollen Ablauf gegeben. Allerdings reicht dies noch nicht aus um los zulegen.
 
-#### Die Welt
+### Die Welt
 
 Es ist durchaus sinnvoll (wie bei jeder guten Schöpfungsgeschichte), zunächst die Welt zu erschaffen (=den Modellraum festzulegen). Mit dem Anlegen eines neuen Projekts wird eine Standard-Umgebung generiert ([vgl. Netlogo Tutorial 1](https://ccl.northwestern.edu/netlogo/docs/tutorial1.html),[2](https://ccl.northwestern.edu/netlogo/docs/tutorial2.html),[3](https://ccl.northwestern.edu/netlogo/docs/tutorial3.html)). Diese sollte nach dem Modellzweck (in diesem Fall Standard/Default) angepasst werden ([*Tutorial 1-\>Controlling the View*](https://ccl.northwestern.edu/netlogo/docs/tutorial1.html#controlling-the-view)).
 
@@ -74,7 +74,7 @@ Im Prinzip liefert das **Hillclimbing Example** sowohl Welt als auch Turtles. Wi
 
 -   Wie kann man über das Interface einstellen ob die Turtles ihren Weg markieren (*pen-up, pen-down*)?
 
-#### Die Turtles
+### Die Turtles
 
 Eigentlich geht es erst jetzt daran die Turtles in diese Welt zu setzten. Es gilt ein möglichst einfaches Regelwerk zu finden, das die Turtles veranlasst, stets nach den Höhen zu streben. Folgende Kriterien müssen berücksichtigt werden:
 
