@@ -106,13 +106,6 @@ Natürlich zeigt das ChallengeOneBasic-Beispiel, dass es nicht sinnvoll ist (wie
 
 -   Direkte Kommunikation von Agenten: Communication-T-T, Communication-T-P
 
-#### Gipfelstürmer und was nun?
-
-Schneller, besser, weiter, höher... ist nur der Anfang. Es drängen sich eine Reihe von noch nicht gelösten Fragen und Optimierung auf. So z.B. ist die Visualisierung der Hügel und ihre Formgebung noch wenig ansprechend (oder gar naturnah...). Man könnte auch Informationen über den Zustand der Turtles sammeln und visualisieren oder speichern. Eingedenk der Einleitung kann z.B. die aktuelle minimale, mittlere bzw. maximale Höhe der Agenten eine Maßzahl für seinen Glückszustand sein (=je höher das Turtle je glücklicher). Auch ist bei der vorliegenden Implementierung die Frage ungelöst ob und wie es erreicht werden kann, dass alle Turtles irgendwann auf dem höchsten Gipfel stehen (bleiben). Im Kasten ***Fragen und Untersuchungen*** sind einige Anregungen für Modellerweiterungen und Fragen aufgelistet.
-
-![](../images/image5.png)
-
-Im Script **ChallengeOneAdvanced** sind die meisten dieser Fragen bearbeitet. Es bietet eine gute Grundlage um sich mit der Programmierung und den unterschiedlichen Auswirkungen der Suchstrategien vertraut zu machen. Das Skript ist ausführlich kommentiert. Es sollte unbedingt durchgearbeitet werden
 
 ## Verwendete Strukturen und Befehle im Skript ChallengeOneBasic
 
@@ -122,7 +115,16 @@ Gerade als Anfänger darf nicht verwirren, dass viele Befehle miteinander kombin
 
 ![](../images/image6.png) Tabelle : Hinweise zu den verwendeten Befehlen
 
-## Hinweise und Lösungen
+## ChallengeOneAdvanced
+Im erweiterten Skript finden Sie einige zusätzliche Möglichkeiten um die Agenten-Bewegung im Raum zu untersuchen. 
+
+Der Ansatz ist zweigleisig:
+Zum einen bietet das Skript **ChallengeOneAdvanced** bietet eine gute Grundlage um sich mit der Programmierung Top Down auseinanderzusetzen. Das Skript ist ausführlich kommentiert. Es sollte unbedingt durchgearbeitet werden. Zum Anderen können anhand des Modells raumwirksame Regeln und Muster untersucht und interpretiert werden. 
+
+Im Kasten ***Fragen und Untersuchungen*** sind einige Anregungen für Fragen aufgelistet.
+
+![](../images/image5.png)
+
 
 Die Skripte **ChallengeOneBasic** und **ChallengeOneAdvanced** sind auf github [verfügbar](https://github.com/gisma-courses/LV-19-050-189-ABM/tree/main/assets). Das Basic Script implementiert die Grundfragestellung ohne viel Schnörkel. 
 ![](../images/bm.png) 
@@ -133,13 +135,18 @@ Technisch wurde das Programm um *ifelse* Abfragen und die Möglichkeit Daten aus
 ![](../images/am.png) 
 *Screenshot ChallengeOneAdvancend*
 
+#### Gipfelstürmer und was nun?
+
+Schneller, besser, weiter, höher... ist nur der Anfang. Es drängen sich eine Reihe von noch nicht gelösten Fragen und Optimierung auf. So z.B. ist die Visualisierung der Hügel und ihre Formgebung noch wenig ansprechend (oder gar naturnah...). Man könnte auch Informationen über den Zustand der Turtles sammeln und visualisieren oder speichern. Eingedenk der Einleitung kann z.B. die aktuelle minimale, mittlere bzw. maximale Höhe der Agenten eine Maßzahl für seinen Glückszustand sein (=je höher das Turtle je glücklicher). Auch ist bei der vorliegenden Implementierung die Frage ungelöst ob und wie es erreicht werden kann, dass alle Turtles irgendwann auf dem höchsten Gipfel stehen (bleiben). 
 
 ::: {.callout-tip appearance="minimal"}
-**Sensitivitätsanalyse:**
+**Aufgaben:**
 
--   Dokumentieren Sie die beiden Modelle ChallengeOneBasic und ChallengeOneAdvanced gemäß der Vorgaben von Grimm (2006). Sie können dem Protokoll der [University of Leeds](https://programmingforresearchers.leeds.ac.uk/netlogo/section-5/).
+-   Dokumentieren Sie ChallengeOneAdvanced gemäß der Vorgaben von Grimm (2006). Sie können dem Protokoll der [University of Leeds](https://programmingforresearchers.leeds.ac.uk/netlogo/section-5/) folgen.
 
 -   Führen Sie eine [Sensitivitätsstudie](https://ccl.northwestern.edu/netlogo/docs/behaviorspace.html) mit dem Modell ChallengeOneAdvanced durch. Weitere Unterstützung finden Sie in [Kapitel 10](https://programmingforresearchers.leeds.ac.uk/netlogo/section-10/) der University of Leeds.
+
+Erstellen Sie auf dieser Grundlage eine Tabelle die als Spalten Parameter, Raummuster, Reproduzierbarkeit enthält und interperetieren sie sie Tabelle.
 :::
 
 ## Zusammenfassung
