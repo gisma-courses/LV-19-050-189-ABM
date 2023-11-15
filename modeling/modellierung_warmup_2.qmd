@@ -142,6 +142,12 @@ Technisch wurde das Programm um *ifelse* Abfragen und die Möglichkeit Daten aus
 ![](../images/am.png) 
 *Screenshot ChallengeOneAdvancend*
 
+Ein erster Einstieg kann auch durch die Webversionen am Beispiel des ChallengeOneAdvancend Scripts erarbeitet werden.
+```{=html}
+<iframe width="1024" height="920" src="../assets/Challenge1Basic.html" title="ChallengeOneBasic"></iframe>
+```
+
+
 ## Gipfelstürmer und was nun?
 
 Schneller, besser, weiter, höher... ist nur der Anfang. Es drängen sich eine Reihe von noch nicht gelösten Fragen und Optimierung auf. So z.B. ist die Visualisierung der Hügel und ihre Formgebung noch wenig ansprechend (oder gar naturnah...). Man könnte auch Informationen über den Zustand der Turtles sammeln und visualisieren oder speichern. Eingedenk der Einleitung kann z.B. die aktuelle minimale, mittlere bzw. maximale Höhe der Agenten eine Maßzahl für seinen Glückszustand sein (=je höher das Turtle je glücklicher). Auch ist bei der vorliegenden Implementierung die Frage ungelöst ob und wie es erreicht werden kann, dass alle Turtles irgendwann auf dem höchsten Gipfel stehen (bleiben). 

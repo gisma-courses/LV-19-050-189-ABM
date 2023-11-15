@@ -16,7 +16,8 @@ to setup
   ;; __clear-all-and-reset-ticks should be replaced with clear-all at
   ;; the beginning of your setup procedure and reset-ticks at the end
   ;; of the procedure.)
-  __clear-all-and-reset-ticks ; löschen aller Variableninhalte
+  clear-all
+  reset-ticks ; löschen aller Variableninhalte
 
   ;; ziehe aus allen patches zufällig die im Slider eingestellte Anzahl von Patches
   ;; und weise ihnen zufällige Höhen zwischen 90 und 100 zu
@@ -100,9 +101,9 @@ to setup-plot
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
-286
+240
 10
-723
+677
 448
 -1
 -1
@@ -127,10 +128,10 @@ ticks
 30.0
 
 SLIDER
-11
-257
-103
-290
+105
+105
+230
+138
 anzahlhuegel
 anzahlhuegel
 0
@@ -142,10 +143,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-11
-298
-103
-331
+105
+141
+230
+174
 num-turtles
 num-turtles
 0
@@ -157,10 +158,10 @@ NIL
 HORIZONTAL
 
 PLOT
-121
-19
-281
-139
+10
+185
+230
+305
 Average Height
 NIL
 NIL
@@ -176,10 +177,10 @@ PENS
 "zt" 1.0 0 -1 true "" ""
 
 BUTTON
-145
-229
-234
-262
+10
+70
+99
+103
 NIL
 go-turtles8
 T
@@ -193,10 +194,10 @@ NIL
 1
 
 BUTTON
-21
+10
 20
-84
-53
+100
+65
 NIL
 setup
 NIL
@@ -210,10 +211,10 @@ NIL
 1
 
 BUTTON
-145
-266
-234
-299
+10
+107
+99
+140
 NIL
 go-observer8
 T
@@ -227,10 +228,10 @@ NIL
 1
 
 BUTTON
-142
-302
-234
-335
+9
+143
+99
+176
 NIL
 go-observer4
 T
@@ -244,10 +245,10 @@ NIL
 1
 
 SWITCH
-129
-165
-264
-198
+105
+70
+230
+103
 draw-path?
 draw-path?
 0
@@ -555,5 +556,5 @@ true
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
 @#$#@#$#@
-0
+1
 @#$#@#$#@

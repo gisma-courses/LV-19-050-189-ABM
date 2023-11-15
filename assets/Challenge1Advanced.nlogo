@@ -16,8 +16,8 @@ to setup
   ;; __clear-all-and-reset-ticks should be replaced with clear-all at
   ;; the beginning of your setup procedure and reset-ticks at the end
   ;; of the procedure.)
-  __clear-all-and-reset-ticks ; löschen aller Variableninhalte
-
+  ca ; löschen aller Variableninhalte
+  reset-ticks
   ;; ziehe aus allen patches zufällig die im Slider eingestellte Anzahl von Patches
   ;; und weise ihnen zufällige Höhen zwischen 90 und 100 zu
   ask n-of anzahlhuegel patches [ set elevation (random-float 1000 + 900)]
@@ -177,9 +177,9 @@ To import
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
-415
+300
 10
-864
+749
 460
 -1
 -1
@@ -204,10 +204,10 @@ ticks
 30.0
 
 SLIDER
-17
-81
-118
-114
+15
+80
+150
+113
 anzahlhuegel
 anzahlhuegel
 1
@@ -220,9 +220,9 @@ HORIZONTAL
 
 SLIDER
 15
-124
-118
-157
+115
+150
+148
 num-turtles
 num-turtles
 0
@@ -234,10 +234,10 @@ NIL
 HORIZONTAL
 
 PLOT
-215
-10
-406
-130
+14
+328
+174
+461
 average elevation of turtles
 Ticks
 Höhe
@@ -253,10 +253,10 @@ PENS
 "meanelevation" 2.0 0 -13345367 true "" ""
 
 BUTTON
-157
-297
-286
-330
+151
+256
+280
+289
 Alternative Suche
 go-turtles
 T
@@ -270,9 +270,9 @@ NIL
 1
 
 BUTTON
-18
+17
 40
-81
+80
 73
 NIL
 setup
@@ -287,10 +287,10 @@ NIL
 1
 
 BUTTON
-15
-249
-102
-282
+19
+255
+138
+288
 NIL
 go-observer8
 T
@@ -304,10 +304,10 @@ NIL
 1
 
 BUTTON
-16
-285
-104
-318
+20
+291
+138
+324
 NIL
 go-observer4
 T
@@ -321,10 +321,10 @@ NIL
 1
 
 SWITCH
-17
-160
-118
-193
+15
+150
+150
+183
 pen-down?
 pen-down?
 0
@@ -332,10 +332,10 @@ pen-down?
 -1000
 
 SWITCH
-303
-300
-408
-333
+155
+80
+280
+113
 All-Wissen?
 All-Wissen?
 1
@@ -343,10 +343,10 @@ All-Wissen?
 -1000
 
 SWITCH
-302
-337
-411
-370
+156
+112
+281
+145
 Teil-Wissen?
 Teil-Wissen?
 1
@@ -354,10 +354,10 @@ Teil-Wissen?
 -1000
 
 SLIDER
-321
-407
-413
-440
+155
+180
+280
+213
 vision-angle
 vision-angle
 1
@@ -369,10 +369,10 @@ NIL
 HORIZONTAL
 
 SLIDER
-320
-372
-412
-405
+156
+147
+281
+180
 vision-radius
 vision-radius
 0
@@ -384,40 +384,40 @@ NIL
 HORIZONTAL
 
 TEXTBOX
-160
-267
-277
-292
-Advanced\n------------------------------
+154
+226
+287
+282
+Erweiterte Gipfelsuche\n--------------------------------
 11
 105.0
 1
 
 TEXTBOX
-14
-218
-108
-243
-Observer Aufrufe\n------------------
-11
+22
+228
+150
+254
+Einfache Gipfelsuche\n-------------------------------
+10
 27.0
 1
 
 TEXTBOX
-7
-13
-99
-38
-Setup\n----------------------
+19
+10
+220
+34
+Basis Setup für Turtles und Hügel\n--------------------------------------------------
 11
 0.0
 1
 
 MONITOR
-216
-222
-402
-267
+174
+416
+291
+461
 GipfelTurtles
 peak
 17
@@ -425,10 +425,10 @@ peak
 11
 
 MONITOR
-217
-133
-402
-178
+175
+327
+291
+372
 Höchster Gipfel
 maxelevation
 1
@@ -436,10 +436,10 @@ maxelevation
 11
 
 MONITOR
-216
-178
-402
-223
+174
+372
+291
+417
 Mittlere TurtleHöhe
 avelev
 1
@@ -447,10 +447,10 @@ avelev
 11
 
 BUTTON
-157
-333
-284
-366
+92
+41
+219
+74
 Import Turtleposition
 import
 NIL
@@ -461,16 +461,6 @@ NIL
 NIL
 NIL
 NIL
-1
-
-TEXTBOX
-12
-372
-312
-456
-NIL
-10
-0.0
 1
 
 @#$#@#$#@
@@ -806,5 +796,5 @@ true
 Line -7500403 true 150 150 90 180
 Line -7500403 true 150 150 210 180
 @#$#@#$#@
-0
+1
 @#$#@#$#@
