@@ -1,5 +1,5 @@
 ---
-Titel: Modell Flussmäander
+Titel: Challenge Two Flussmäander
  
 title-block-banner: /images/climate-splash.jpg
 title-block-banner-color: black
@@ -16,7 +16,7 @@ Das Modell Flussmäander beschreibt die Entstehung von Mäandern, es ist ein phy
 ""
 
 
-### Verwenden Sie das Modell
+
 Versuchen Sie, die folgenden Fragen zu beantworten, indem Sie die Einstellungen der Modellwelt mithilfe der Schieberegler anpassen:
 
 * Wie wirkt sich die Sedimentation auf die Bildung von Mäandern aus?
