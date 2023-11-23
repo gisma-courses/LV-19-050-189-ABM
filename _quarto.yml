@@ -35,7 +35,8 @@ website:
       - section: "Challenges"
         contents: 
           - modeling/modellierung_warmup_2.qmd
-          - modeling/ChallengeTwo.qmd
+          - href: modeling/ChallengeTwo.qmd
+            text: "Biegung des Flußes"
       - text: "---"
       - section: "Material"
         contents:

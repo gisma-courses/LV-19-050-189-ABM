@@ -72,7 +72,7 @@ Machen Sie sich mit dem Modell vertraut. Versuchen Sie, die folgenden Fragen zu 
 * Wie groß ist die maximale Sinuosität? 
 :::
 
-### Verstehen Sie das Modell
+### Modellverständnis
 Versuchen Sie zu verstehen, wie das Modell funktioniert, und lesen Sie den Abschnitt über das Modell, um die grundlegenden Ideen zu verstehen.
 
 ::: {.callout-tip appearance="minimal"  title="Aufgaben"}
