@@ -37,30 +37,33 @@ Versuchen Sie zu verstehen, wie das Modell funktioniert, und lesen Sie den Absch
 Bereitet Sie sich darauf vor, das Modell Ihren Kolleg:innen in maximal 5 Minuten zu präsentieren. 
 :::
 
-### Interpretieren des Modells
-Wissenschaftliche Kompetenz beruht auf mehreren Schlüsselqualifikationen, zu denen die von Ihnen genannten gehören:
+## Interpretation und Verständnis des Modells
+
+Ganz allgemein berucht wissenschaftliche Kompetenz auf mehreren Schlüsselqualifikationen:
 
 1. Fragen zu identifizieren:
-   * Fähigkeit, relevante und klare Forschungsfragen zu formulieren.
-   * Kompetenz in der Identifizierung von Forschungslücken und Problemen.
+
+    * Fähigkeit, relevante und klare Forschungsfragen zu formulieren.
+    * Kompetenz in der Identifizierung von Forschungslücken und Problemen.
 
 2. Sich neues Wissen anzueignen:
-   * Effektive Recherche- und Informationsbeschaffungsfähigkeiten.
-   * Fähigkeit zur kritischen Bewertung und Auswahl von Quellen.
+
+    * Effektive Recherche- und Informationsbeschaffungsfähigkeiten.
+    * Fähigkeit zur kritischen Bewertung und Auswahl von Quellen.
 
 3. Wissenschaftliche Phänomene zu beobachten:
-   * Präzise Beobachtungsfähigkeiten, sei es im Labor oder im Feld.
-   * Verständnis für Methoden der Datenerhebung und -analyse.
+   
+    * Präzise Beobachtungsfähigkeiten, sei es im Labor oder im Feld.
+    * Verständnis für Methoden der Datenerhebung und -analyse.
 
 4. Evidenzbasierte Schlussfolgerungen zu ziehen:
+
     *  Analytische Denkfähigkeiten zur Auswertung von Daten.
     *  Fähigkeit zur Bildung von Schlussfolgerungen auf der Grundlage von Beweisen und Daten.
 
 Diese Fähigkeiten bilden das Grundgerüst für einen kritischen und wissenschaftlichen Ansatz bei der Untersuchung und Analyse von Phänomenen. Durch die Anwendung dieser Kompetenzen können Wissenschaftlerinnen Erkenntnisse gewinnen und dazu beitragen, das Verständnis in ihrer jeweiligen Disziplin zu vertiefen.
 
-## Interpretation und Verständnis des Modells
-
-Berücksichtigt man das ODD-Protokoll (Overview, Design concepts, Details) in der Modellierung von Multiagentenmodellen, können die genannten Ziele wie folgt formuliert werden:
+Berücksichtigt man nun das das ODD-Protokoll (Overview, Design concepts, Details) in der Modellierung von Multiagentenmodellen, können die genannten Ziele wie folgt präzisiert werden:
 
 1. Ein reales Szenario, für das das Modell interpretiert werden kann:
 
