@@ -9,34 +9,6 @@ Flussmäander entstehen durch die Wechselwirkung von hydrodynamischen Kräften u
 
 Die resultierende sekundäre Strömung, auch als Helix- oder Schraubenströmung bekannt, führt zu einer vertikalen und horizontalen Verlagerung von Sedimenten. Die Zentrifugalkraft bewirkt eine Erosion in den äußeren Kurven, während die geringere Geschwindigkeit in den inneren Kurven zu Sedimentablagerungen führt. Dieser komplexe Zusammenhang zwischen Strömungsdynamik und Sedimenttransport führt zur Entstehung von Flussmäandern, wobei sich die charakteristischen Biegungen und Windungen im Flussbett entwickeln.
 
-Das Modell Flussmäander beschreibt die Entstehung von Mäandern, es ist ein physikalisch-geographisches Modell und im Vergleich zu den anderen hier vorgestellten Möglichkeiten recht komplex.
-
-
-
-<iframe width="1280" height="1000" src="../assets/River Meanders.html" title="ChallengeOneBasic"></iframe>
-
-
-Machen Sie sich mit dem Modell vertraut. Versuchen Sie, die folgenden Fragen zu beantworten, indem Sie die Einstellungen der Modellwelt mithilfe der Schieberegler anpassen:
-
-::: {.callout-tip appearance="minimal"  title="Aufgaben"}
-* Wie wirkt sich die Sedimentation auf die Bildung von Mäandern aus?
-* Wie wirkt sich die Erosion auf die Bildung von Mäandern aus?
-* Können Sie die Bildung von Mäandern verzögern? Versuchen Sie, die Verzögerung zu maximieren.
-* Wie groß ist die maximale Sinuosität? 
-:::
-
-### Verstehen Sie das Modell
-Versuchen Sie zu verstehen, wie das Modell funktioniert, und lesen Sie den Abschnitt über das Modell, um die grundlegenden Ideen zu verstehen.
-
-::: {.callout-tip appearance="minimal"  title="Aufgaben"}
-* Wie beginnt der Erosionsprozess?
-* Warum werden die Mäander größer und größer?
-* Warum gibt es ein Maximum für die Krümmung? 
-:::
-::: {.callout-tip appearance="simple"}
-Bereitet Sie sich darauf vor, das Modell Ihren Kolleg:innen in maximal 5 Minuten zu präsentieren. 
-:::
-
 ## Interpretation und Verständnis des Modells
 
 Ganz allgemein berucht wissenschaftliche Kompetenz auf mehreren Schlüsselqualifikationen:
@@ -81,6 +53,34 @@ Berücksichtigt man nun das das ODD-Protokoll (Overview, Design concepts, Detail
 
     * Klare Darstellung der Beweise, die zur Unterstützung der gewonnenen Erkenntnisse verwendet wurden, einschließlich der Daten aus der Simulation, statistischer Analysen oder anderer empirischer Methoden.
 Durch die Anwendung des ODD-Protokolls wird nicht nur das Modell selbst, sondern auch der gesamte Forschungsprozess transparenter, reproduzierbarer und besser interpretierbar.
-::: {.callout-tip appearance="simple"}
-Bereiten Sie sich darauf vor, Ihre Überlegungen Ihren Kolleg:innen in maximal 5 Minuten zu präsentieren. 
+
+## Das Modell Flussmäander
+
+Das Modell Flussmäander beschreibt die Entstehung von Mäandern, es ist ein physikalisch-geographisches Modell und einingermassen komplex.
+
+
+<iframe width="1280" height="1000" src="../assets/River Meanders.html" title="ChallengeOneBasic"></iframe>
+
+## Aufgabenstellung
+
+Machen Sie sich mit dem Modell vertraut. Versuchen Sie, die folgenden Fragen zu beantworten, indem Sie die Einstellungen der Modellwelt mithilfe der Schieberegler anpassen:
+
+::: {.callout-tip appearance="minimal"  title="Aufgaben"}
+* Wie wirkt sich die Sedimentation auf die Bildung von Mäandern aus?
+* Wie wirkt sich die Erosion auf die Bildung von Mäandern aus?
+* Können Sie die Bildung von Mäandern verzögern? Versuchen Sie, die Verzögerung zu maximieren.
+* Wie groß ist die maximale Sinuosität? 
 :::
+
+### Verstehen Sie das Modell
+Versuchen Sie zu verstehen, wie das Modell funktioniert, und lesen Sie den Abschnitt über das Modell, um die grundlegenden Ideen zu verstehen.
+
+::: {.callout-tip appearance="minimal"  title="Aufgaben"}
+* Wie beginnt der Erosionsprozess?
+* Warum werden die Mäander größer und größer?
+* Warum gibt es ein Maximum für die Krümmung? 
+:::
+::: {.callout-tip appearance="simple"}
+Bereitet Sie sich darauf vor, das Modell Ihren Kolleg:innen in maximal 5 Minuten zu präsentieren. 
+:::
+
