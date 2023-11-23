@@ -1,36 +1,38 @@
 ---
-Titel: Challenge Two Flussmäander
- 
-title-block-banner: /images/climate-splash.jpg
-title-block-banner-color: black
+title: "Biegung des Flußes"
 
+title-block-banner: ../images/river-splash.png
+title-block-banner-color: black
 ---
+
+Flussmäander entstehen durch die Wechselwirkung von hydrodynamischen Kräften und morphologischen Prozessen in Flussbetten. Wenn ein Fluss auf ein unebenes Terrain trifft oder durch unterschiedlich durchlässige Gesteinsschichten fließt, entsteht eine divergente Strömung. In den äußeren Kurven des Flusses wird durch die Zentrifugalkraft eine höhere Fließgeschwindigkeit erreicht, während in den inneren Kurven die Zentrifugalkraft abnimmt und das Wasser langsamer fließt.
+
+Die resultierende sekundäre Strömung, auch als Helix- oder Schraubenströmung bekannt, führt zu einer vertikalen und horizontalen Verlagerung von Sedimenten. Die Zentrifugalkraft bewirkt eine Erosion in den äußeren Kurven, während die geringere Geschwindigkeit in den inneren Kurven zu Sedimentablagerungen führt. Dieser komplexe Zusammenhang zwischen Strömungsdynamik und Sedimenttransport führt zur Entstehung von Flussmäandern, wobei sich die charakteristischen Biegungen und Windungen im Flussbett entwickeln.
 
 Das Modell Flussmäander beschreibt die Entstehung von Mäandern, es ist ein physikalisch-geographisches Modell und im Vergleich zu den anderen hier vorgestellten Möglichkeiten recht komplex.
 
 
-```{=html}
-<iframe width="1024" height="920" src="../assets/River Meanders.html" title="ChallengeOneBasic"></iframe>
-```
 
-""
+<iframe width="1280" height="1000" src="../assets/River Meanders.html" title="ChallengeOneBasic"></iframe>
 
 
+Machen Sie sich mit dem Modell vertraut. Versuchen Sie, die folgenden Fragen zu beantworten, indem Sie die Einstellungen der Modellwelt mithilfe der Schieberegler anpassen:
 
-Versuchen Sie, die folgenden Fragen zu beantworten, indem Sie die Einstellungen der Modellwelt mithilfe der Schieberegler anpassen:
-
+::: {.callout-tip appearance="minimal"  title="Aufgaben"}
 * Wie wirkt sich die Sedimentation auf die Bildung von Mäandern aus?
 * Wie wirkt sich die Erosion auf die Bildung von Mäandern aus?
 * Können Sie die Bildung von Mäandern verzögern? Versuchen Sie, die Verzögerung zu maximieren.
 * Wie groß ist die maximale Sinuosität? 
+:::
 
 ### Verstehen Sie das Modell
 Versuchen Sie zu verstehen, wie das Modell funktioniert, und lesen Sie den Abschnitt über das Modell, um die grundlegenden Ideen zu verstehen.
 
+::: {.callout-tip appearance="minimal"  title="Aufgaben"}
 * Wie beginnt der Erosionsprozess?
 * Warum werden die Mäander größer und größer?
 * Warum gibt es ein Maximum für die Krümmung? 
-
+:::
 ::: {.callout-tip appearance="simple"}
 Bereitet Sie sich darauf vor, das Modell Ihren Kolleg:innen in maximal 5 Minuten zu präsentieren. 
 :::

@@ -1,5 +1,8 @@
 ---
-title: "Top of the World" 
+title: "Top of the World"
+
+title-block-banner:  ../images/hinterland.png
+title-block-banner-color: black
 ---
 
 Modelle sind -wie bereits einführend erwähnt- spezifische, vereinfachte Ausschnitte der Wirklichkeit. Diese erste Programmierübung **ChallengeOne** soll anhand eines einfachen Beispiels vermitteln, wie dieser recht komplexe Vorgang praktisch realisiert werden kann.
@@ -152,8 +155,8 @@ Ein erster Einstieg kann auch durch die Webversionen am Beispiel des ChallengeOn
 
 Schneller, besser, weiter, höher... ist nur der Anfang. Es drängen sich eine Reihe von noch nicht gelösten Fragen und Optimierung auf. So z.B. ist die Visualisierung der Hügel und ihre Formgebung noch wenig ansprechend (oder gar naturnah...). Man könnte auch Informationen über den Zustand der Turtles sammeln und visualisieren oder speichern. Eingedenk der Einleitung kann z.B. die aktuelle minimale, mittlere bzw. maximale Höhe der Agenten eine Maßzahl für seinen Glückszustand sein (=je höher das Turtle je glücklicher). Auch ist bei der vorliegenden Implementierung die Frage ungelöst ob und wie es erreicht werden kann, dass alle Turtles irgendwann auf dem höchsten Gipfel stehen (bleiben). 
 
-::: {.callout-tip appearance="minimal"}
-**Aufgaben:**
+::: {.callout-tip appearance="minimal"  title="Aufgaben"}
+
 
 -   Dokumentieren Sie ChallengeOneAdvanced gemäß der Vorgaben von Grimm (2006). Sie können dem Protokoll der [University of Leeds](https://programmingforresearchers.leeds.ac.uk/netlogo/section-5/) folgen.
 
