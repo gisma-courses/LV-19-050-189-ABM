@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gisma-courses.github.io/LV-19-050-189-ABM/index.html</loc>
-    <lastmod>2023-11-23T17:10:10.189Z</lastmod>
+    <lastmod>2023-11-23T22:00:47.286Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-050-189-ABM/base/faq.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-050-189-ABM/templates/allformats-odt-docx-examples.html</loc>
-    <lastmod>2023-11-23T18:07:14.927Z</lastmod>
+    <lastmod>2023-11-23T22:00:45.922Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-050-189-ABM/modules/de-git-module.html</loc>
@@ -78,10 +78,18 @@
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-050-189-ABM/templates/journals-examples-default.html</loc>
-    <lastmod>2023-11-23T18:07:15.563Z</lastmod>
+    <lastmod>2023-11-23T22:00:46.762Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-050-189-ABM/modeling/ChallengeTwo.html</loc>
-    <lastmod>2023-11-23T18:07:26.720Z</lastmod>
+    <lastmod>2023-11-23T21:58:17.463Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gisma-courses.github.io/LV-19-050-189-ABM/modeling/ChallengeOne.html</loc>
+    <lastmod>2023-11-23T21:56:04.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gisma-courses.github.io/LV-19-050-189-ABM/modeling/ChallengeThree.html</loc>
+    <lastmod>2023-11-23T21:58:22.083Z</lastmod>
   </url>
 </urlset>

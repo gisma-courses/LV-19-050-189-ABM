@@ -1,0 +1,86 @@
+---
+title: "Biegung des Flußes"
+
+title-block-banner: ../images/river-splash.png
+title-block-banner-color: black
+---
+
+Flussmäander entstehen durch die Wechselwirkung von hydrodynamischen Kräften und morphologischen Prozessen in Flussbetten. Wenn ein Fluss auf ein unebenes Terrain trifft oder durch unterschiedlich durchlässige Gesteinsschichten fließt, entsteht eine divergente Strömung. In den äußeren Kurven des Flusses wird durch die Zentrifugalkraft eine höhere Fließgeschwindigkeit erreicht, während in den inneren Kurven die Zentrifugalkraft abnimmt und das Wasser langsamer fließt.
+
+Die resultierende sekundäre Strömung, auch als Helix- oder Schraubenströmung bekannt, führt zu einer vertikalen und horizontalen Verlagerung von Sedimenten. Die Zentrifugalkraft bewirkt eine Erosion in den äußeren Kurven, während die geringere Geschwindigkeit in den inneren Kurven zu Sedimentablagerungen führt. Dieser komplexe Zusammenhang zwischen Strömungsdynamik und Sedimenttransport führt zur Entstehung von Flussmäandern, wobei sich die charakteristischen Biegungen und Windungen im Flussbett entwickeln.
+
+## Interpretation und Verständnis des Modells
+
+Ganz allgemein berucht wissenschaftliche Kompetenz auf mehreren Schlüsselqualifikationen:
+
+1. Fragen zu identifizieren:
+
+    * Fähigkeit, relevante und klare Forschungsfragen zu formulieren.
+    * Kompetenz in der Identifizierung von Forschungslücken und Problemen.
+
+2. Sich neues Wissen anzueignen:
+
+    * Effektive Recherche- und Informationsbeschaffungsfähigkeiten.
+    * Fähigkeit zur kritischen Bewertung und Auswahl von Quellen.
+
+3. Wissenschaftliche Phänomene zu beobachten:
+   
+    * Präzise Beobachtungsfähigkeiten, sei es im Labor oder im Feld.
+    * Verständnis für Methoden der Datenerhebung und -analyse.
+
+4. Evidenzbasierte Schlussfolgerungen zu ziehen:
+
+    *  Analytische Denkfähigkeiten zur Auswertung von Daten.
+    *  Fähigkeit zur Bildung von Schlussfolgerungen auf der Grundlage von Beweisen und Daten.
+
+Diese Fähigkeiten bilden das Grundgerüst für einen kritischen und wissenschaftlichen Ansatz bei der Untersuchung und Analyse von Phänomenen. Durch die Anwendung dieser Kompetenzen können Wissenschaftlerinnen Erkenntnisse gewinnen und dazu beitragen, das Verständnis in ihrer jeweiligen Disziplin zu vertiefen.
+
+Berücksichtigt man nun das das ODD-Protokoll (Overview, Design concepts, Details) in der Modellierung von Multiagentenmodellen, können die genannten Ziele wie folgt präzisiert werden:
+
+1. Ein reales Szenario, für das das Modell interpretiert werden kann:
+
+    * Formulierung eines realen Szenarios, beispielsweise im Bereich sozialer Interaktionen, in dem Multiagentenmodelle zur Simulation und Analyse eingesetzt werden können. Dies könnte beispielsweise eine städtische Umgebung mit verschiedenen Agenten wie Bewohnern, Verkehrsteilnehmern und Unternehmen sein.
+
+2. Eine entsprechende Forschungsfrage, die durch Anwendung des Modells untersucht werden kann:
+
+    * Entwicklung einer spezifischen Forschungsfrage, die auf das gewählte Szenario zugeschnitten ist, wie beispielsweise: "Wie beeinflussen unterschiedliche Verhaltensmuster von Agenten in städtischen Umgebungen die Effizienz des Verkehrsflusses und die Lebensqualität der Bewohner?"
+
+3. Die durch die Anwendung des Modells gewonnenen Erkenntnisse:
+
+    * Beschreibung der Erkenntnisse, die durch die Anwendung des Multiagentenmodells gewonnen wurden, beispielsweise in Bezug auf das Verhalten der Agenten, das Auftreten von Mustern oder das Verständnis von Wechselwirkungen innerhalb des simulierten Systems.
+
+4. Die Beweise, auf denen dieses Wissen beruht:
+
+    * Klare Darstellung der Beweise, die zur Unterstützung der gewonnenen Erkenntnisse verwendet wurden, einschließlich der Daten aus der Simulation, statistischer Analysen oder anderer empirischer Methoden.
+Durch die Anwendung des ODD-Protokolls wird nicht nur das Modell selbst, sondern auch der gesamte Forschungsprozess transparenter, reproduzierbarer und besser interpretierbar.
+
+## Das Modell Flussmäander
+
+Das Modell Flussmäander beschreibt die Entstehung von Mäandern, es ist ein physikalisch-geographisches Modell und einingermassen komplex.
+
+
+<iframe width="1280" height="1000" src="../assets/River Meanders.html" title="ChallengeOneBasic"></iframe>
+
+## Aufgabenstellung
+
+Machen Sie sich mit dem Modell vertraut. Versuchen Sie, die folgenden Fragen zu beantworten, indem Sie die Einstellungen der Modellwelt mithilfe der Schieberegler anpassen:
+
+::: {.callout-tip appearance="minimal"  title="Aufgaben"}
+* Wie wirkt sich die Sedimentation auf die Bildung von Mäandern aus?
+* Wie wirkt sich die Erosion auf die Bildung von Mäandern aus?
+* Können Sie die Bildung von Mäandern verzögern? Versuchen Sie, die Verzögerung zu maximieren.
+* Wie groß ist die maximale Sinuosität? 
+:::
+
+### Modellverständnis
+Versuchen Sie zu verstehen, wie das Modell funktioniert, und lesen Sie den Abschnitt über das Modell, um die grundlegenden Ideen zu verstehen.
+
+::: {.callout-tip appearance="minimal"  title="Aufgaben"}
+* Wie beginnt der Erosionsprozess?
+* Warum werden die Mäander größer und größer?
+* Warum gibt es ein Maximum für die Krümmung? 
+:::
+::: {.callout-tip appearance="simple"}
+Bereitet Sie sich darauf vor, das Modell Ihren Kolleg:innen in maximal 5 Minuten zu präsentieren. 
+:::
+

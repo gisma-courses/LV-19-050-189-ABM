@@ -34,8 +34,11 @@ website:
       - text: "---"
       - section: "Challenges"
         contents: 
-          - modeling/modellierung_warmup_2.qmd
+          - href: modeling/ChallengeOne.qmd
+            text: "Top of the World part 1"
           - href: modeling/ChallengeTwo.qmd
+            text: "Top of the World part 2"
+          - href: modeling/ChallengeThree.qmd
             text: "Biegung des Flußes"
       - text: "---"
       - section: "Material"

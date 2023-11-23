@@ -1,86 +1,42 @@
 ---
-title: "Biegung des Flußes"
+title: "Advances in Top of the World "
 
-title-block-banner: ../images/river-splash.png
+title-block-banner:  ../images/hinterland.png
 title-block-banner-color: black
 ---
+## ChallengeTwo - Suchen ist nicht gleich suchen
 
-Flussmäander entstehen durch die Wechselwirkung von hydrodynamischen Kräften und morphologischen Prozessen in Flussbetten. Wenn ein Fluss auf ein unebenes Terrain trifft oder durch unterschiedlich durchlässige Gesteinsschichten fließt, entsteht eine divergente Strömung. In den äußeren Kurven des Flusses wird durch die Zentrifugalkraft eine höhere Fließgeschwindigkeit erreicht, während in den inneren Kurven die Zentrifugalkraft abnimmt und das Wasser langsamer fließt.
+In ChallegeTwo finden Sie einige zusätzliche Möglichkeiten um die Agenten-Bewegung im Raum zu untersuchen. Zuätzlich werden Möglichketien aufgezeigt wie diese Verhaltensweisen systematisch reproduzierbar und damit quantitativ analysierbar werden.
 
-Die resultierende sekundäre Strömung, auch als Helix- oder Schraubenströmung bekannt, führt zu einer vertikalen und horizontalen Verlagerung von Sedimenten. Die Zentrifugalkraft bewirkt eine Erosion in den äußeren Kurven, während die geringere Geschwindigkeit in den inneren Kurven zu Sedimentablagerungen führt. Dieser komplexe Zusammenhang zwischen Strömungsdynamik und Sedimenttransport führt zur Entstehung von Flussmäandern, wobei sich die charakteristischen Biegungen und Windungen im Flussbett entwickeln.
+Der Ansatz ist zweigleisig: Zum einen bietet das Skript ChallengeOneAdvanced bietet eine gute Grundlage um sich mit einer Vertiefung der Netlogo Programmierung auseinanderzusetzen. Das Skript ist ausführlich kommentiert und sollte unbedingt durchgearbeitet werden. Zum Anderen können anhand des Modells raumwirksame Regeln und Muster untersucht und interpretiert werden.
 
-## Interpretation und Verständnis des Modells
+Im Kasten Fragen und Untersuchungen sind einige Anregungen für Fragen aufgelistet.
+![](../images/image5.png) 
 
-Ganz allgemein berucht wissenschaftliche Kompetenz auf mehreren Schlüsselqualifikationen:
+Die im Kasten **Fragen und Untersuchungen** angeregten Punkte betreffen vor allem die unterschiedlichen räumlichen Wirkungsweisen der Suchlogiken und das resultierende Raumverhalten der Turtles. Damit dies systematisch möglich wird wurde eine Funktion *Import Turtleposition* implementiert.  Technisch wurde das Programm um *ifelse* Abfragen und die Möglichkeit Daten auszuschreiben/einzulesen erweitert.
 
-1. Fragen zu identifizieren:
-
-    * Fähigkeit, relevante und klare Forschungsfragen zu formulieren.
-    * Kompetenz in der Identifizierung von Forschungslücken und Problemen.
-
-2. Sich neues Wissen anzueignen:
-
-    * Effektive Recherche- und Informationsbeschaffungsfähigkeiten.
-    * Fähigkeit zur kritischen Bewertung und Auswahl von Quellen.
-
-3. Wissenschaftliche Phänomene zu beobachten:
-   
-    * Präzise Beobachtungsfähigkeiten, sei es im Labor oder im Feld.
-    * Verständnis für Methoden der Datenerhebung und -analyse.
-
-4. Evidenzbasierte Schlussfolgerungen zu ziehen:
-
-    *  Analytische Denkfähigkeiten zur Auswertung von Daten.
-    *  Fähigkeit zur Bildung von Schlussfolgerungen auf der Grundlage von Beweisen und Daten.
-
-Diese Fähigkeiten bilden das Grundgerüst für einen kritischen und wissenschaftlichen Ansatz bei der Untersuchung und Analyse von Phänomenen. Durch die Anwendung dieser Kompetenzen können Wissenschaftlerinnen Erkenntnisse gewinnen und dazu beitragen, das Verständnis in ihrer jeweiligen Disziplin zu vertiefen.
-
-Berücksichtigt man nun das das ODD-Protokoll (Overview, Design concepts, Details) in der Modellierung von Multiagentenmodellen, können die genannten Ziele wie folgt präzisiert werden:
-
-1. Ein reales Szenario, für das das Modell interpretiert werden kann:
-
-    * Formulierung eines realen Szenarios, beispielsweise im Bereich sozialer Interaktionen, in dem Multiagentenmodelle zur Simulation und Analyse eingesetzt werden können. Dies könnte beispielsweise eine städtische Umgebung mit verschiedenen Agenten wie Bewohnern, Verkehrsteilnehmern und Unternehmen sein.
-
-2. Eine entsprechende Forschungsfrage, die durch Anwendung des Modells untersucht werden kann:
-
-    * Entwicklung einer spezifischen Forschungsfrage, die auf das gewählte Szenario zugeschnitten ist, wie beispielsweise: "Wie beeinflussen unterschiedliche Verhaltensmuster von Agenten in städtischen Umgebungen die Effizienz des Verkehrsflusses und die Lebensqualität der Bewohner?"
-
-3. Die durch die Anwendung des Modells gewonnenen Erkenntnisse:
-
-    * Beschreibung der Erkenntnisse, die durch die Anwendung des Multiagentenmodells gewonnen wurden, beispielsweise in Bezug auf das Verhalten der Agenten, das Auftreten von Mustern oder das Verständnis von Wechselwirkungen innerhalb des simulierten Systems.
-
-4. Die Beweise, auf denen dieses Wissen beruht:
-
-    * Klare Darstellung der Beweise, die zur Unterstützung der gewonnenen Erkenntnisse verwendet wurden, einschließlich der Daten aus der Simulation, statistischer Analysen oder anderer empirischer Methoden.
-Durch die Anwendung des ODD-Protokolls wird nicht nur das Modell selbst, sondern auch der gesamte Forschungsprozess transparenter, reproduzierbarer und besser interpretierbar.
-
-## Das Modell Flussmäander
-
-Das Modell Flussmäander beschreibt die Entstehung von Mäandern, es ist ein physikalisch-geographisches Modell und einingermassen komplex.
+*Screenshot ChallengeOneAdvancend*
 
 
-<iframe width="1280" height="1000" src="../assets/River Meanders.html" title="ChallengeOneBasic"></iframe>
 
-## Aufgabenstellung
-
-Machen Sie sich mit dem Modell vertraut. Versuchen Sie, die folgenden Fragen zu beantworten, indem Sie die Einstellungen der Modellwelt mithilfe der Schieberegler anpassen:
 
 ::: {.callout-tip appearance="minimal"  title="Aufgaben"}
-* Wie wirkt sich die Sedimentation auf die Bildung von Mäandern aus?
-* Wie wirkt sich die Erosion auf die Bildung von Mäandern aus?
-* Können Sie die Bildung von Mäandern verzögern? Versuchen Sie, die Verzögerung zu maximieren.
-* Wie groß ist die maximale Sinuosität? 
+
+-   Führen Sie eine [Sensitivitätsstudie](https://ccl.northwestern.edu/netlogo/docs/behaviorspace.html) mit dem Modell ChallengeOneAdvanced durch. Weitere Unterstützung finden Sie in [Kapitel 10](https://programmingforresearchers.leeds.ac.uk/netlogo/section-10/) der University of Leeds.
+
+Erstellen Sie auf dieser Grundlage eine Tabelle die als Spalten Parameter, Raummuster, Reproduzierbarkeit enthält und interperetieren sie sie Tabelle.
 :::
 
-### Modellverständnis
-Versuchen Sie zu verstehen, wie das Modell funktioniert, und lesen Sie den Abschnitt über das Modell, um die grundlegenden Ideen zu verstehen.
 
-::: {.callout-tip appearance="minimal"  title="Aufgaben"}
-* Wie beginnt der Erosionsprozess?
-* Warum werden die Mäander größer und größer?
-* Warum gibt es ein Maximum für die Krümmung? 
-:::
-::: {.callout-tip appearance="simple"}
-Bereitet Sie sich darauf vor, das Modell Ihren Kolleg:innen in maximal 5 Minuten zu präsentieren. 
-:::
+## Zusammenfassung
+
+Diese zweite Programmierübung sollte zeigen wie das Modell für wissenschaftliche Unterscuhungen erweitert werden kann und Grundlage für eine Sensitivitätsanalyse bieten. 
+
+## Literatur
+
+
+1. Grimm V. Berger U. Bastiansen F. Eliassen S. Ginot V. Giske J. Goss-Custard J. Grand T. Heinz SK. Huse G. Huth A. Jepsen JU. Jorgensen C. Mooij WM. Muller B. Pe'er G. Piou C. Railsback SF. Robbins AM. Robbins MM. Rossmanith E. Ruger N.(2006): A standard protocol for describing individual-based and agent-based models. Ecological Modelling. v198. 115-126. Issues 1-2, 2006, p. 115-126. https://doi.org/10.1016/j.ecolmodel.2006.04.023 
+
+
+1. Knoeri, C., Busch J & C. Bale [Programming for researchers Netlogo](https://programmingforresearchers.leeds.ac.uk/netlogo/), University of Leeds
 
