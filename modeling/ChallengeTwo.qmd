@@ -38,20 +38,46 @@ Bereitet Sie sich darauf vor, das Modell Ihren Kolleg:innen in maximal 5 Minuten
 :::
 
 ### Interpretieren des Modells
-Um wissenschaftlich kompetent zu werden, sollten die Schüler lernen:
+Wissenschaftliche Kompetenz beruht auf mehreren Schlüsselqualifikationen, zu denen die von Ihnen genannten gehören:
 
-* Fragen zu identifizieren
-* sich neues Wissen anzueignen
-* wissenschaftliche Phänomene zu erklären
-* evidenzbasierte Schlussfolgerungen zu ziehen
+1. Fragen zu identifizieren:
+   * Fähigkeit, relevante und klare Forschungsfragen zu formulieren.
+   * Kompetenz in der Identifizierung von Forschungslücken und Problemen.
 
-Bitte denken Sie bei der Betrachtung dieser Ziele an Folgendes:
+2. Sich neues Wissen anzueignen:
+   * Effektive Recherche- und Informationsbeschaffungsfähigkeiten.
+   * Fähigkeit zur kritischen Bewertung und Auswahl von Quellen.
 
-* Ein reales Szenario, für das das Modell interpretiert werden kann.
-* Eine entsprechende Forschungsfrage, die durch Anwendung des Modells untersucht werden kann.
-* Die durch die Anwendung des Modells gewonnenen Erkenntnisse.
-* Die Beweise, auf denen dieses Wissen beruht.
+3. Wissenschaftliche Phänomene zu beobachten:
+   * Präzise Beobachtungsfähigkeiten, sei es im Labor oder im Feld.
+   * Verständnis für Methoden der Datenerhebung und -analyse.
 
+4. Evidenzbasierte Schlussfolgerungen zu ziehen:
+    *  Analytische Denkfähigkeiten zur Auswertung von Daten.
+    *  Fähigkeit zur Bildung von Schlussfolgerungen auf der Grundlage von Beweisen und Daten.
+
+Diese Fähigkeiten bilden das Grundgerüst für einen kritischen und wissenschaftlichen Ansatz bei der Untersuchung und Analyse von Phänomenen. Durch die Anwendung dieser Kompetenzen können Wissenschaftlerinnen Erkenntnisse gewinnen und dazu beitragen, das Verständnis in ihrer jeweiligen Disziplin zu vertiefen.
+
+## Interpretation und Verständnis des Modells
+
+Berücksichtigt man das ODD-Protokoll (Overview, Design concepts, Details) in der Modellierung von Multiagentenmodellen, können die genannten Ziele wie folgt formuliert werden:
+
+1. Ein reales Szenario, für das das Modell interpretiert werden kann:
+
+    * Formulierung eines realen Szenarios, beispielsweise im Bereich sozialer Interaktionen, in dem Multiagentenmodelle zur Simulation und Analyse eingesetzt werden können. Dies könnte beispielsweise eine städtische Umgebung mit verschiedenen Agenten wie Bewohnern, Verkehrsteilnehmern und Unternehmen sein.
+
+2. Eine entsprechende Forschungsfrage, die durch Anwendung des Modells untersucht werden kann:
+
+    * Entwicklung einer spezifischen Forschungsfrage, die auf das gewählte Szenario zugeschnitten ist, wie beispielsweise: "Wie beeinflussen unterschiedliche Verhaltensmuster von Agenten in städtischen Umgebungen die Effizienz des Verkehrsflusses und die Lebensqualität der Bewohner?"
+
+3. Die durch die Anwendung des Modells gewonnenen Erkenntnisse:
+
+    * Beschreibung der Erkenntnisse, die durch die Anwendung des Multiagentenmodells gewonnen wurden, beispielsweise in Bezug auf das Verhalten der Agenten, das Auftreten von Mustern oder das Verständnis von Wechselwirkungen innerhalb des simulierten Systems.
+
+4. Die Beweise, auf denen dieses Wissen beruht:
+
+    * Klare Darstellung der Beweise, die zur Unterstützung der gewonnenen Erkenntnisse verwendet wurden, einschließlich der Daten aus der Simulation, statistischer Analysen oder anderer empirischer Methoden.
+Durch die Anwendung des ODD-Protokolls wird nicht nur das Modell selbst, sondern auch der gesamte Forschungsprozess transparenter, reproduzierbarer und besser interpretierbar.
 ::: {.callout-tip appearance="simple"}
 Bereiten Sie sich darauf vor, Ihre Überlegungen Ihren Kolleg:innen in maximal 5 Minuten zu präsentieren. 
 :::
