@@ -15,9 +15,6 @@ Im Kasten Fragen und Untersuchungen sind einige Anregungen für Fragen aufgelist
 
 Die im Kasten **Fragen und Untersuchungen** angeregten Punkte betreffen vor allem die unterschiedlichen räumlichen Wirkungsweisen der Suchlogiken und das resultierende Raumverhalten der Turtles. Damit dies systematisch möglich wird wurde eine Funktion *Import Turtleposition* implementiert.  Technisch wurde das Programm um *ifelse* Abfragen und die Möglichkeit Daten auszuschreiben/einzulesen erweitert.
 
-*Screenshot ChallengeOneAdvancend*
-
-
 
 
 ::: {.callout-tip appearance="minimal"  title="Aufgaben"}
