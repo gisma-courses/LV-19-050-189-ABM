@@ -32,9 +32,10 @@ website:
         contents:
           - index.md
       - text: "---"
-      - section: "Challenge One"
+      - section: "Challenges"
         contents: 
           - modeling/modellierung_warmup_2.qmd
+          - modeling/ChallengeTwo.qmd
       - text: "---"
       - section: "Material"
         contents:
