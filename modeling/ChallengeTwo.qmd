@@ -1,0 +1,55 @@
+---
+Titel: Modell Flussmäander
+ 
+title-block-banner: /images/climate-splash.jpg
+title-block-banner-color: black
+
+---
+
+Das Modell Flussmäander beschreibt die Entstehung von Mäandern, es ist ein physikalisch-geographisches Modell und im Vergleich zu den anderen hier vorgestellten Möglichkeiten recht komplex.
+
+
+```{=html}
+<iframe width="1024" height="920" src="../assets/River Meanders.html" title="ChallengeOneBasic"></iframe>
+```
+
+""
+
+
+### Verwenden Sie das Modell
+Versuchen Sie, die folgenden Fragen zu beantworten, indem Sie die Einstellungen der Modellwelt mithilfe der Schieberegler anpassen:
+
+* Wie wirkt sich die Sedimentation auf die Bildung von Mäandern aus?
+* Wie wirkt sich die Erosion auf die Bildung von Mäandern aus?
+* Können Sie die Bildung von Mäandern verzögern? Versuchen Sie, die Verzögerung zu maximieren.
+* Wie groß ist die maximale Sinuosität? 
+
+### Verstehen Sie das Modell
+Versuchen Sie zu verstehen, wie das Modell funktioniert, und lesen Sie den Abschnitt über das Modell, um die grundlegenden Ideen zu verstehen.
+
+* Wie beginnt der Erosionsprozess?
+* Warum werden die Mäander größer und größer?
+* Warum gibt es ein Maximum für die Krümmung? 
+
+::: {.callout-tip appearance="simple"}
+Bereitet Sie sich darauf vor, das Modell Ihren Kolleg:innen in maximal 5 Minuten zu präsentieren. 
+:::
+
+### Interpretieren des Modells
+Um wissenschaftlich kompetent zu werden, sollten die Schüler lernen:
+
+* Fragen zu identifizieren
+* sich neues Wissen anzueignen
+* wissenschaftliche Phänomene zu erklären
+* evidenzbasierte Schlussfolgerungen zu ziehen
+
+Bitte denken Sie bei der Betrachtung dieser Ziele an Folgendes:
+
+* Ein reales Szenario, für das das Modell interpretiert werden kann.
+* Eine entsprechende Forschungsfrage, die durch Anwendung des Modells untersucht werden kann.
+* Die durch die Anwendung des Modells gewonnenen Erkenntnisse.
+* Die Beweise, auf denen dieses Wissen beruht.
+
+::: {.callout-tip appearance="simple"}
+Bereiten Sie sich darauf vor, Ihre Überlegungen Ihren Kolleg:innen in maximal 5 Minuten zu präsentieren. 
+:::
