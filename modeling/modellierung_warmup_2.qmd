@@ -164,11 +164,14 @@ Erstellen Sie auf dieser Grundlage eine Tabelle die als Spalten Parameter, Raumm
 
 ## Zusammenfassung
 
-In dieser ersten Programmierübung sollte ein erster Einstieg in die Programmierung von Mensch-Umweltsystemen erreicht werden. Es wurde gezielt eine etwas zugespitzte Motivationsgrundlage gewählt um zu zeigen dass die wirklichen Fragen sich erst ergeben wenn eine erste Abstraktion implementiert ist und die Resultate interpretiert werden müssen. Gleichzeitig sollte an einem sehr übersichtlichen Beispiel das Grundgerüst der Netlogo Entwicklungsumgebung, diesmal Bottom up verständlich gemacht werden. In der Advanced Version kommen vor allem weitere technische Programmierfähigkeiten hinzu. Hier geht es um bedingte Abfragen und Dateneingabe bzw und -ausgabe.
+In dieser ersten Programmierübung sollte ein erster Einstieg in die Programmierung von Mensch-Umweltsystemen erreicht werden. Es wurde gezielt eine etwas zugespitzte Motivationsgrundlage gewählt um zu zeigen dass die wirklichen Fragen sich erst ergeben wenn eine erste Abstraktion implementiert ist und die Resultate interpretiert werden müssen. Gleichzeitig sollte an einem sehr übersichtlichen Beispiel das Grundgerüst der Netlogo Entwicklungsumgebung verständlich gemacht werden. In der Advanced Version kommen vor allem weitere technische Programmierfähigkeiten hinzu. Hier geht es um bedingte Abfragen und Dateneingabe bzw und -ausgabe.
 
 ## Literatur
 
 
-Grimm V. Berger U. Bastiansen F. Eliassen S. Ginot V. Giske J. Goss-Custard J. Grand T. Heinz SK. Huse G. Huth A. Jepsen JU. Jorgensen C. Mooij WM. Muller B. Pe'er G. Piou C. Railsback SF. Robbins AM. Robbins MM. Rossmanith E. Ruger N.(2006): A standard protocol for describing individual-based and agent-based models. Ecological Modelling. v198. 115-126. Issues 1-2, 2006, p. 115-126. https://doi.org/10.1016/j.ecolmodel.2006.04.023 
+1. Grimm V. Berger U. Bastiansen F. Eliassen S. Ginot V. Giske J. Goss-Custard J. Grand T. Heinz SK. Huse G. Huth A. Jepsen JU. Jorgensen C. Mooij WM. Muller B. Pe'er G. Piou C. Railsback SF. Robbins AM. Robbins MM. Rossmanith E. Ruger N.(2006): A standard protocol for describing individual-based and agent-based models. Ecological Modelling. v198. 115-126. Issues 1-2, 2006, p. 115-126. https://doi.org/10.1016/j.ecolmodel.2006.04.023 
 
-Janssen, M., 2008b: NetLogo 4.02 Code of Replication of the well known Artificial Anasazi model that simulate the population dynamics between 800 and 1350 in the Long House Valley in Arizona. https://www.comses.net/codebases/2222/releases/1.1.0/. Zugriff: 12/11/23
+1. Janssen, M., 2008b: NetLogo 4.02 Code of Replication of the well known Artificial Anasazi model that simulate the population dynamics between 800 and 1350 in the Long House Valley in Arizona. https://www.comses.net/codebases/2222/releases/1.1.0/. Zugriff: 12/11/23
+
+1. Knoeri, C., Busch J & C. Bale [Programming for researchers Netlogo](https://programmingforresearchers.leeds.ac.uk/netlogo/), University of Leeds
+

@@ -459,14 +459,14 @@
     "href": "modeling/modellierung_warmup_2.html#zusammenfassung",
     "title": "Top of the World",
     "section": "Zusammenfassung",
-    "text": "Zusammenfassung\nIn dieser ersten Programmierübung sollte ein erster Einstieg in die Programmierung von Mensch-Umweltsystemen erreicht werden. Es wurde gezielt eine etwas zugespitzte Motivationsgrundlage gewählt um zu zeigen dass die wirklichen Fragen sich erst ergeben wenn eine erste Abstraktion implementiert ist und die Resultate interpretiert werden müssen. Gleichzeitig sollte an einem sehr übersichtlichen Beispiel das Grundgerüst der Netlogo Entwicklungsumgebung, diesmal Bottom up verständlich gemacht werden. In der Advanced Version kommen vor allem weitere technische Programmierfähigkeiten hinzu. Hier geht es um bedingte Abfragen und Dateneingabe bzw und -ausgabe."
+    "text": "Zusammenfassung\nIn dieser ersten Programmierübung sollte ein erster Einstieg in die Programmierung von Mensch-Umweltsystemen erreicht werden. Es wurde gezielt eine etwas zugespitzte Motivationsgrundlage gewählt um zu zeigen dass die wirklichen Fragen sich erst ergeben wenn eine erste Abstraktion implementiert ist und die Resultate interpretiert werden müssen. Gleichzeitig sollte an einem sehr übersichtlichen Beispiel das Grundgerüst der Netlogo Entwicklungsumgebung verständlich gemacht werden. In der Advanced Version kommen vor allem weitere technische Programmierfähigkeiten hinzu. Hier geht es um bedingte Abfragen und Dateneingabe bzw und -ausgabe."
   },
   {
     "objectID": "modeling/modellierung_warmup_2.html#literatur",
     "href": "modeling/modellierung_warmup_2.html#literatur",
     "title": "Top of the World",
     "section": "Literatur",
-    "text": "Literatur\nGrimm V. Berger U. Bastiansen F. Eliassen S. Ginot V. Giske J. Goss-Custard J. Grand T. Heinz SK. Huse G. Huth A. Jepsen JU. Jorgensen C. Mooij WM. Muller B. Pe’er G. Piou C. Railsback SF. Robbins AM. Robbins MM. Rossmanith E. Ruger N.(2006): A standard protocol for describing individual-based and agent-based models. Ecological Modelling. v198. 115-126. Issues 1-2, 2006, p. 115-126. https://doi.org/10.1016/j.ecolmodel.2006.04.023\nJanssen, M., 2008b: NetLogo 4.02 Code of Replication of the well known Artificial Anasazi model that simulate the population dynamics between 800 and 1350 in the Long House Valley in Arizona. https://www.comses.net/codebases/2222/releases/1.1.0/. Zugriff: 12/11/23"
+    "text": "Literatur\n\nGrimm V. Berger U. Bastiansen F. Eliassen S. Ginot V. Giske J. Goss-Custard J. Grand T. Heinz SK. Huse G. Huth A. Jepsen JU. Jorgensen C. Mooij WM. Muller B. Pe’er G. Piou C. Railsback SF. Robbins AM. Robbins MM. Rossmanith E. Ruger N.(2006): A standard protocol for describing individual-based and agent-based models. Ecological Modelling. v198. 115-126. Issues 1-2, 2006, p. 115-126. https://doi.org/10.1016/j.ecolmodel.2006.04.023\nJanssen, M., 2008b: NetLogo 4.02 Code of Replication of the well known Artificial Anasazi model that simulate the population dynamics between 800 and 1350 in the Long House Valley in Arizona. https://www.comses.net/codebases/2222/releases/1.1.0/. Zugriff: 12/11/23\nKnoeri, C., Busch J & C. Bale Programming for researchers Netlogo, University of Leeds"
   },
   {
     "objectID": "modeling/modellierung_warmup_2.html#top-of-the-world",
